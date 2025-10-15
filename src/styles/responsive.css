@@ -100,7 +100,26 @@
 }
 
 @media (max-width: 576px) {
-
+  /* Carousel mobile layout - stack images below text */
+  .slider_section .carousel-item > div {
+    flex-direction: column !important;
+  }
+  
+  .slider_section .carousel-item > div > div:first-child {
+    order: 1;
+    margin-bottom: 30px !important;
+  }
+  
+  .slider_section .carousel-item > div > div:last-child {
+    order: 2;
+    flex: none !important;
+  }
+  
+  .slider_section .carousel-item img {
+    max-width: 300px !important;
+    width: 300px !important;
+    height: auto !important;
+  }
 
   .client_section .box {
     flex-direction: column;
@@ -118,9 +137,25 @@
   }
 }
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+  /* Further adjustments for very small phones */
+  .slider_section .carousel-item img {
+    max-width: 280px !important;
+    width: 280px !important;
+  }
+  
+  .slider_section .carousel-item > div > div:first-child {
+    margin-bottom: 25px !important;
+  }
+}
 
-@media (max-width: 420px) {}
+@media (max-width: 420px) {
+  /* Adjustments for extra small phones */
+  .slider_section .carousel-item img {
+    max-width: 250px !important;
+    width: 250px !important;
+  }
+}
 
 @media (max-width: 376px) {
   .slider_section .detail_box h1 {

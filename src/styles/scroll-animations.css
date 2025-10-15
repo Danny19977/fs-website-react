@@ -1,0 +1,161 @@
+/* Additional styles for enhanced scroll animations */
+
+/* Smooth scroll behavior for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced service section animations */
+.service_section .box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service_section .box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced about section animations */
+.about_section .img-box img {
+  transition: transform 0.3s ease;
+}
+
+.about_section .img-box:hover img {
+  transform: scale(1.05);
+}
+
+/* Enhanced price section animations */
+.price_section .box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.price_section .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Enhanced portfolio animations */
+.portfolio_section .box {
+  transition: transform 0.3s ease;
+}
+
+.portfolio_section .box:hover {
+  transform: translateY(-8px);
+}
+
+/* Form animations */
+.form_container input,
+.form_container textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form_container input:focus,
+.form_container textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.1);
+}
+
+/* Button hover animations */
+.btn-1,
+.btn-2,
+.about-btn {
+  transition: all 0.3s ease;
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.about-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Video animations */
+video {
+  transition: transform 0.3s ease;
+}
+
+video:hover {
+  transform: scale(1.02);
+}
+
+/* Info section links animations */
+.info_links a {
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.info_links a:hover {
+  transform: translateX(5px);
+  color: #007bff;
+}
+
+/* Social icons animations */
+.info_social a {
+  transition: transform 0.3s ease;
+}
+
+.info_social a:hover {
+  transform: scale(1.2) rotate(10deg);
+}
+
+/* Testimonial animations */
+.testimonial-carousel {
+  transition: opacity 0.5s ease;
+}
+
+/* Enhanced carousel controls */
+.carousel-control-prev,
+.carousel-control-next {
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 0.8;
+}
+
+/* Loading animation for images */
+img {
+  transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+  opacity: 0;
+}
+
+/* Responsive animations for mobile */
+@media (max-width: 768px) {
+  .scroll-animated-element {
+    transition-duration: 400ms !important; /* Faster on mobile */
+  }
+  
+  /* Reduced hover effects on mobile */
+  .service_section .box:hover,
+  .price_section .box:hover,
+  .portfolio_section .box:hover {
+    transform: none;
+  }
+}
+
+/* Dark mode support for animations */
+@media (prefers-color-scheme: dark) {
+  .scroll-animated-element--card {
+    background: #2d3748;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .scroll-animated-element {
+    transition-duration: 200ms !important; /* Faster for accessibility */
+  }
+}
+
+/* Print styles - disable animations */
+@media print {
+  .scroll-animated-element {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+}

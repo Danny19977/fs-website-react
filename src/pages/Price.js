@@ -1,5 +1,6 @@
 import React from 'react';
 import FSNavbar from '../components/Navbar';
+import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -92,29 +93,33 @@ const Price = ({ darkMode, setDarkMode }) => {
       </section>
       <section className="price_section layout_padding">
         <div className="container">
-          <div className="heading_container heading_center">
-            <h2>Our Specail Pricing</h2>
-          </div>
-          <div className="price_container">
-            <div className="box">
-              <div className="detail-box">
-                <h2>R <span style={{ textDecoration: 'line-through' }}>5000</span></h2>
-                <h2>R <span>3500</span></h2>
-                <h6>WEB DESIGN BASIC</h6>
-                <ul className="price_features">
-                  <li>1 PAGE</li>
-                  <li>5 pages or more</li>
-                  <li>CONTACT US</li>
-                  <li>Free hosting</li>
-                  <li>5GB SSD Cloud Storage</li>
-                  <li>Free SSL Protection</li>
-                  <li>24/7/365 Tech Support</li>
-                </ul>
-              </div>
-              <div className="btn-box">
-                <a href="/pdf/Graphics Design Proposal Special prices.pdf" download>See Detail</a>
-              </div>
+          <ScrollAnimatedElement animation="fade-up" delay={0}>
+            <div className="heading_container heading_center">
+              <h2>Our Specail Pricing</h2>
             </div>
+          </ScrollAnimatedElement>
+          <div className="price_container">
+            <ScrollAnimatedElement animation="scale-up" delay={100}>
+              <div className="box">
+                <div className="detail-box">
+                  <h2>R <span style={{ textDecoration: 'line-through' }}>5000</span></h2>
+                  <h2>R <span>3500</span></h2>
+                  <h6>WEB DESIGN BASIC</h6>
+                  <ul className="price_features">
+                    <li>1 PAGE</li>
+                    <li>5 pages or more</li>
+                    <li>CONTACT US</li>
+                    <li>Free hosting</li>
+                    <li>5GB SSD Cloud Storage</li>
+                    <li>Free SSL Protection</li>
+                    <li>24/7/365 Tech Support</li>
+                  </ul>
+                </div>
+                <div className="btn-box">
+                  <a href="/pdf/Graphics Design Proposal Special prices.pdf" download>See Detail</a>
+                </div>
+              </div>
+            </ScrollAnimatedElement>
             <div className="box">
               <div className="detail-box">
                 <h2>R <span style={{ textDecoration: 'line-through' }}>2500</span></h2>

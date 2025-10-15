@@ -1,0 +1,150 @@
+/* ScrollAnimatedElement.css - Smooth scroll animations with performance optimization */
+
+.scroll-animated-element {
+  /* Base styles for all animated elements */
+  transition-property: opacity, transform;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94); /* Smooth easing */
+  transition-duration: var(--animation-duration, 600ms);
+  transition-delay: var(--animation-delay, 0ms);
+  
+  /* Enable hardware acceleration for better performance */
+  transform: translateZ(0);
+  will-change: opacity, transform;
+  backface-visibility: hidden;
+  
+  /* Initial hidden state */
+  opacity: 0;
+}
+
+/* Fade Up Animation */
+.scroll-animated-element--fade-up {
+  transform: translateY(30px);
+}
+
+.scroll-animated-element--fade-up.scroll-animated-element--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Fade In Animation */
+.scroll-animated-element--fade-in {
+  transform: translateY(0);
+}
+
+.scroll-animated-element--fade-in.scroll-animated-element--visible {
+  opacity: 1;
+}
+
+/* Slide In Left Animation */
+.scroll-animated-element--slide-in-left {
+  transform: translateX(-50px);
+}
+
+.scroll-animated-element--slide-in-left.scroll-animated-element--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Slide In Right Animation */
+.scroll-animated-element--slide-in-right {
+  transform: translateX(50px);
+}
+
+.scroll-animated-element--slide-in-right.scroll-animated-element--visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Scale Up Animation */
+.scroll-animated-element--scale-up {
+  transform: scale(0.8);
+}
+
+.scroll-animated-element--scale-up.scroll-animated-element--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Zoom In Animation */
+.scroll-animated-element--zoom-in {
+  transform: scale(0.9);
+}
+
+.scroll-animated-element--zoom-in.scroll-animated-element--visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Flip Up Animation */
+.scroll-animated-element--flip-up {
+  transform: perspective(400px) rotateX(90deg);
+  transform-origin: center bottom;
+}
+
+.scroll-animated-element--flip-up.scroll-animated-element--visible {
+  opacity: 1;
+  transform: perspective(400px) rotateX(0deg);
+}
+
+/* Performance optimizations */
+.scroll-animated-element--visible {
+  /* Remove will-change after animation completes to optimize performance */
+  animation-fill-mode: forwards;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  .scroll-animated-element {
+    transition-duration: 0.01ms !important;
+    transition-delay: 0ms !important;
+    animation-duration: 0.01ms !important;
+    animation-delay: 0ms !important;
+  }
+}
+
+/* High performance mode for lower-end devices */
+@media (max-width: 768px) {
+  .scroll-animated-element {
+    transition-duration: calc(var(--animation-duration, 600ms) * 0.7);
+  }
+}
+
+/* Custom utility classes for common use cases */
+.scroll-animated-element--paragraph {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.scroll-animated-element--image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.scroll-animated-element--card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Stagger animations for multiple elements */
+.scroll-animated-element--stagger-1 {
+  transition-delay: calc(var(--animation-delay, 0ms) + 100ms);
+}
+
+.scroll-animated-element--stagger-2 {
+  transition-delay: calc(var(--animation-delay, 0ms) + 200ms);
+}
+
+.scroll-animated-element--stagger-3 {
+  transition-delay: calc(var(--animation-delay, 0ms) + 300ms);
+}
+
+.scroll-animated-element--stagger-4 {
+  transition-delay: calc(var(--animation-delay, 0ms) + 400ms);
+}
+
+.scroll-animated-element--stagger-5 {
+  transition-delay: calc(var(--animation-delay, 0ms) + 500ms);
+}

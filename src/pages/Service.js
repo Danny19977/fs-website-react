@@ -1,5 +1,6 @@
 import React from 'react';
 import FSNavbar from '../components/Navbar';
+import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,47 +12,55 @@ const Service = ({ darkMode, setDarkMode }) => {
   <FSNavbar />
       <section className="service_section layout_padding">
         <div className="container">
-          <div className="heading_container heading_center">
-            <h2>Our Services</h2>
-          </div>
+          <ScrollAnimatedElement animation="fade-up" delay={0}>
+            <div className="heading_container heading_center">
+              <h2>Our Services</h2>
+            </div>
+          </ScrollAnimatedElement>
         </div>
         <div className="container">
           <div className="row">
             <div className="col-md-6 col-lg-4">
-              <div className="box">
-                <div className="img-box">
-                  <img src="/images/service_icon (1).png" alt="Website Development" />
+              <ScrollAnimatedElement animation="fade-up" delay={100}>
+                <div className="box">
+                  <div className="img-box">
+                    <img src="/images/service_icon (1).png" alt="Website Development" />
+                  </div>
+                  <div className="detail-box">
+                    <h4>Website Development</h4>
+                    <p>Freelance Solutions offers top-notch website development services tailored to meet your unique needs. Our team of experts ensures that your website is not only visually appealing but also highly functional and optimized for performance. By choosing Freelance Solutions, you gain access to innovative designs, cutting-edge technologies, and a commitment to delivering exceptional results that help your business thrive in the digital world.</p>
+                    <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                  </div>
                 </div>
-                <div className="detail-box">
-                  <h4>Website Development</h4>
-                  <p>Freelance Solutions offers top-notch website development services tailored to meet your unique needs. Our team of experts ensures that your website is not only visually appealing but also highly functional and optimized for performance. By choosing Freelance Solutions, you gain access to innovative designs, cutting-edge technologies, and a commitment to delivering exceptional results that help your business thrive in the digital world.</p>
-                  <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer">Contact Us</a>
-                </div>
-              </div>
+              </ScrollAnimatedElement>
             </div>
             <div className="col-md-6 col-lg-4">
-              <div className="box">
-                <div className="img-box">
-                  <img src="/images/service_icon (2).png" alt="Website Redesign" />
+              <ScrollAnimatedElement animation="fade-up" delay={200}>
+                <div className="box">
+                  <div className="img-box">
+                    <img src="/images/service_icon (2).png" alt="Website Redesign" />
+                  </div>
+                  <div className="detail-box">
+                    <h4>Website Redesign</h4>
+                    <p>Freelance Solutions specializes in website redesign services that breathe new life into your online presence. Our team of skilled designers and developers work closely with you to understand your vision and goals, ensuring that the redesigned website not only looks stunning but also enhances user experience and functionality. With our expertise, we transform outdated websites into modern, responsive, and visually appealing platforms that captivate your audience and drive results.</p>
+                    <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                  </div>
                 </div>
-                <div className="detail-box">
-                  <h4>Website Redesign</h4>
-                  <p>Freelance Solutions specializes in website redesign services that breathe new life into your online presence. Our team of skilled designers and developers work closely with you to understand your vision and goals, ensuring that the redesigned website not only looks stunning but also enhances user experience and functionality. With our expertise, we transform outdated websites into modern, responsive, and visually appealing platforms that captivate your audience and drive results.</p>
-                  <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer">Contact Us</a>
-                </div>
-              </div>
+              </ScrollAnimatedElement>
             </div>
             <div className="col-md-6 col-lg-4">
-              <div className="box">
-                <div className="img-box">
-                  <img src="/images/service_icon (3).png" alt="Graphic Design" />
+              <ScrollAnimatedElement animation="fade-up" delay={300}>
+                <div className="box">
+                  <div className="img-box">
+                    <img src="/images/service_icon (3).png" alt="Graphic Design" />
+                  </div>
+                  <div className="detail-box">
+                    <h4>Graphic Design</h4>
+                    <p>Freelance Solutions offers exceptional graphic design services that elevate your brand's visual identity. Our talented designers create stunning graphics, logos, and marketing materials tailored to your specific needs. With a focus on creativity and innovation, we ensure that your designs not only capture attention but also effectively communicate your message. Trust Freelance Solutions to bring your ideas to life with captivating visuals that leave a lasting impression.</p>
+                    <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                  </div>
                 </div>
-                <div className="detail-box">
-                  <h4>Graphic Design</h4>
-                  <p>Freelance Solutions offers exceptional graphic design services that elevate your brand's visual identity. Our talented designers create stunning graphics, logos, and marketing materials tailored to your specific needs. With a focus on creativity and innovation, we ensure that your designs not only capture attention but also effectively communicate your message. Trust Freelance Solutions to bring your ideas to life with captivating visuals that leave a lasting impression.</p>
-                  <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer">Contact Us</a>
-                </div>
-              </div>
+              </ScrollAnimatedElement>
             </div>
           </div>
         </div>

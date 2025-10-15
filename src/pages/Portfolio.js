@@ -1,5 +1,6 @@
 import React from 'react';
 import FSNavbar from '../components/Navbar';
+import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -9,46 +10,54 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
   return (
     <div className="hero_area">
   <FSNavbar />
-      <div className="container-fluid text-center my-3">
-        <img src="/images/online-removebg.png" alt="Online Portfolio Banner" style={{ maxWidth: '100%', height: 'auto' }} />
-      </div>
+      <ScrollAnimatedElement animation="fade-up" delay={0}>
+        <div className="container-fluid text-center my-3">
+          <img src="/images/online-removebg.png" alt="Online Portfolio Banner" style={{ maxWidth: '100%', height: 'auto' }} />
+        </div>
+      </ScrollAnimatedElement>
       <section className="portfolio_section layout_padding">
         <div className="container">
-          <div className="heading_container heading_center">
-            <h2>Our Portfolio</h2>
-            <p>Explore the websites we've developed and designs we've created for our clients.</p>
-          </div>
+          <ScrollAnimatedElement animation="fade-up" delay={100}>
+            <div className="heading_container heading_center">
+              <h2>Our Portfolio</h2>
+              <p>Explore the websites we've developed and designs we've created for our clients.</p>
+            </div>
+          </ScrollAnimatedElement>
           <div className="row portfolio_items justify-content-center">
             {/* Websites */}
             <div className="col-md-6 col-lg-4 portfolio_item mb-4" data-category="websites">
-              <div className="box">
-                <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
-                  <video controls style={{ width: '100%', height: 200, objectFit: 'cover' }}>
-                    <source src="/video/camus.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+              <ScrollAnimatedElement animation="scale-up" delay={200}>
+                <div className="box">
+                  <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
+                    <video controls style={{ width: '100%', height: 200, objectFit: 'cover' }}>
+                      <source src="/video/camus.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="detail-box">
+                    <h4>Camus Salru</h4>
+                    <p>A sleek and responsive coffee shop website showcasing their menu, locations, and online ordering system.</p>
+                    <a href="https://www.camussarlu.com/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                  </div>
                 </div>
-                <div className="detail-box">
-                  <h4>Camus Salru</h4>
-                  <p>A sleek and responsive coffee shop website showcasing their menu, locations, and online ordering system.</p>
-                  <a href="https://www.camussarlu.com/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                </div>
-              </div>
+              </ScrollAnimatedElement>
             </div>
             <div className="col-md-6 col-lg-4 portfolio_item mb-4" data-category="websites">
-              <div className="box">
-                <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
-                  <video controls style={{ width: '100%', height: 200, objectFit: 'cover' }}>
-                    <source src="/video/auther.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+              <ScrollAnimatedElement animation="scale-up" delay={300}>
+                <div className="box">
+                  <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
+                    <video controls style={{ width: '100%', height: 200, objectFit: 'cover' }}>
+                      <source src="/video/auther.mp4" type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                  <div className="detail-box">
+                    <h4>Auther</h4>
+                    <p>Helping the author expand their online presence and connect with a broader clientele through a professional and engaging website.</p>
+                    <a href="http://matambalukasu.com/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                  </div>
                 </div>
-                <div className="detail-box">
-                  <h4>Auther</h4>
-                  <p>Helping the author expand their online presence and connect with a broader clientele through a professional and engaging website.</p>
-                  <a href="http://matambalukasu.com/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">Visit Site</a>
-                </div>
-              </div>
+              </ScrollAnimatedElement>
             </div>
             <div className="col-md-6 col-lg-4 portfolio_item mb-4" data-category="websites">
               <div className="box">
