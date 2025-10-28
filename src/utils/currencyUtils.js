@@ -5,17 +5,17 @@ export const CURRENCY_CONFIG = {
     symbol: 'R',
     rate: 1 // Base currency
   },
-  drc: {
+  cd: {
     currency: 'USD',
     locale: 'fr-CD',
     symbol: '$',
     rate: 1/17 // 1 Rand = 1/17 USD
   },
-  eu: {
+  gb: {
     currency: 'GBP',
     locale: 'en-GB',
     symbol: '£',
-    rate: 1/21 // 1 Rand = 1/21 EUR
+    rate: 1/21 // 1 Rand = 1/21 GBP
   }
 };
 
@@ -51,9 +51,9 @@ export const getCountryFromLanguage = (language) => {
 
 export const getLanguageFromCountry = (country) => {
   switch (country) {
-    case 'drc':
+    case 'cd':
       return 'fr';
-    case 'eu':
+    case 'gb':
       return 'en';
     case 'za':
       return 'za';
