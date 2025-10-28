@@ -11,6 +11,7 @@ import Price from './pages/Price';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import ServiceDetails from './pages/ServiceDetails';
+import './i18n/i18n';
 
 export default App;
 

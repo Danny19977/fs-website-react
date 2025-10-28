@@ -6,9 +6,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Navbar, Nav, Container } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
 
-const FSNavbar = ({ darkMode, setDarkMode }) => (
+const FSNavbar = ({ darkMode, setDarkMode }) => {
+  const { t } = useTranslation();
+  
+  return (
   <header className="header_section">
     <Navbar expand="lg" className="custom_nav-container impressive-navbar" bg="dark" variant="dark">
       <Container fluid>
@@ -18,15 +23,16 @@ const FSNavbar = ({ darkMode, setDarkMode }) => (
         <Navbar.Toggle aria-controls="navbarSupportedContent" className="impressive-navbar-toggle" />
         <Navbar.Collapse id="navbarSupportedContent">
           <Nav className="ms-auto">
-            <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/about">About</Nav.Link>
-            <Nav.Link href="/service">Services</Nav.Link>
-            <Nav.Link href="/price">Special Pricing</Nav.Link>
-            <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="/contact">Contact Us</Nav.Link>
+            <Nav.Link href="/">{t('nav.home')}</Nav.Link>
+            <Nav.Link href="/about">{t('nav.about')}</Nav.Link>
+            <Nav.Link href="/service">{t('nav.services')}</Nav.Link>
+            <Nav.Link href="/price">{t('nav.price')}</Nav.Link>
+            <Nav.Link href="/portfolio">{t('nav.portfolio')}</Nav.Link>
+            <Nav.Link href="/contact">{t('nav.contact')}</Nav.Link>
           </Nav>
           <div className="quote_btn-container" style={{ display: 'flex', alignItems: 'center', marginLeft: '20px' }}>
-            <span className="dark-mode-toggle" title="Toggle dark mode" style={{ marginRight: '10px' }} onClick={() => {
+            <LanguageSelector />
+            <span className="dark-mode-toggle" title="Toggle dark mode" style={{ marginRight: '10px', marginLeft: '10px' }} onClick={() => {
               setDarkMode(!darkMode);
               localStorage.setItem('fs_dark_mode', !darkMode ? '1' : '0');
             }}>{darkMode ? '☀️' : '🌙'}</span>
@@ -39,6 +45,7 @@ const FSNavbar = ({ darkMode, setDarkMode }) => (
       </Container>
     </Navbar>
   </header>
-);
+  );
+};
 
 export default FSNavbar;

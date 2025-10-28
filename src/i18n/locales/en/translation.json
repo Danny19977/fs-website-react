@@ -1,0 +1,270 @@
+{
+  "about": {
+    "title": "About Us",
+    "subtitle": "Bringing Your Digital Vision to Life",
+    "intro": {
+      "p1": "At Freelance Solutions, we don't just build websites or design graphics—we create digital experiences that drive success. Whether you're a small business, a growing brand, or an individual looking to establish a strong online presence, we bring your ideas to life with creativity, innovation, and precision.",
+      "p2": "Our passion lies in helping businesses thrive in today's fast-moving digital world. From website creation to website redesign, from graphic design to automation solutions, we offer tailored freelance services that help you stand out, attract customers, and streamline your workflow."
+    },
+    "whatWeDo": {
+      "title": "What We Do",
+      "items": {
+        "websiteCreation": "Website Creation – Your website is your digital storefront. We design and develop sleek, user-friendly, and high-performing websites that engage visitors and turn them into loyal customers.",
+        "websiteRedesign": "Website Redesign – Is your website outdated, slow, or not bringing in results? We revamp and optimize your site to enhance user experience, boost speed, and improve search rankings.",
+        "onlinePresence": "Online Presence – Being online is no longer optional—it's a necessity. We help businesses build a strong and strategic digital presence through SEO, social media, branding, and content marketing, ensuring you're always visible and competitive.",
+        "automation": "Systems and Task Automation – Save time, reduce errors, and focus on what truly matters! We implement smart automation solutions that streamline repetitive tasks, manage workflows, and improve efficiency, so your business runs smoothly 24/7.",
+        "graphicDesign": "Graphic Design – First impressions matter! Whether you need a logo, social media graphics, business cards, or branding materials, we craft stunning visuals that make your brand stand out and leave a lasting impact."
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Freelance Solutions?",
+      "items": {
+        "customSolutions": "Custom Solutions for Every Business – We tailor every project to your unique needs and goals.",
+        "creativity": "Creativity Meets Functionality – Our work is not just visually stunning but also designed to perform.",
+        "resultsDriven": "Results-Driven Approach – We focus on delivering designs and websites that convert visitors into customers.",
+        "priority": "Your Success is Our Priority – We're not just a service provider; we're your digital partners."
+      }
+    },
+    "conclusion": {
+      "p1": "Let's Build Something Amazing Together! Your online presence matters, and at Freelance Solutions, we're here to help you make a powerful impact. Whether you need a brand-new website, a fresh redesign, or digital solutions that save you time and money, we're ready to bring your vision to life.",
+      "p2": "Let's talk! Contact us today and take your business to the next level."
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "price": "Special Pricing"
+  },
+  "home": {
+    "welcome": {
+      "title": "WELCOME TO",
+      "subtitle": "FREELANCE SOLUTIONS",
+      "description": "We deliver exceptional web development and comprehensive design solutions. Let us help you create a stunning online presence that stands out from the competition."
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "How we can help you succeed",
+      "webDesign": {
+        "title": "Website Creation",
+        "description": "Your Online Presence Starts Here. Let us help you create a stunning website that stands out from the rest."
+      },
+      "webRedesign": {
+        "title": "Web Redesign",
+        "description": "Is Your Website Working for You? Let us help you redesign your website for maximum impact and performance."
+      },
+      "graphicDesign": {
+        "title": "Graphic Design",
+        "description": "Make Your Brand Unforgettable: Professional Graphic Design. Let us help you create stunning visuals that captivate your audience."
+      }
+    },
+    "about": {
+      "title": "About Us",
+      "description": "At Freelance Solutions, we are passionate about delivering top-notch freelance services tailored to your needs. Specializing in quality web development and creative graphic design, we bring your ideas to life with clean, modern, and user-friendly designs. Whether it's building a stunning website or crafting visually compelling graphics, we're dedicated to helping your brand stand out and succeed in the digital world. Let's create something amazing together!"
+    },
+    "future": {
+      "title": "Let Freelance Solutions bring your business to the future",
+      "description": "At Freelance Solutions, we're here to bring your business into the future. we create digital experiences that not only looks great but also drive growth and engagement. Let us help you stay ahead of the curve and transform your vision into a modern, future-ready reality."
+    },
+    "contact": {
+      "title": "Get In Touch",
+      "form": {
+        "name": "Your Name",
+        "email": "Your Email",
+        "phone": "Your Phone",
+        "message": "Message",
+        "send": "SEND"
+      }
+    },
+    "footer": {
+      "address": {
+        "title": "Address",
+        "location": "South Africa, Gauteng",
+        "phone": "Call +27 633 377 293",
+        "email": "freelancesolutions46@gmail.com"
+      },
+      "links": {
+        "title": "Links"
+      },
+      "info": {
+        "title": "Info",
+        "description": "Freelance Solutions crafts impactful online and print presences through expert website development and graphic design. We aim to be the trusted creative hub for all visual and web needs, offering reliable and innovative services. Our skills include building and revamping websites using various technologies and designing diverse graphics to help clients stand out."
+      },
+      "subscribe": {
+        "title": "Subscribe",
+        "placeholder": "Enter email",
+        "button": "Subscribe",
+        "thankYou": "Thank you for subscribing!",
+        "close": "Close"
+      }
+    }
+  },
+  "prices": {
+    "carousel": {
+      "webCreation": {
+        "title": "AFFORDABLE PRICES WEBSITE CREATION",
+        "description": "We offer good competitive prices for website creation, tailored to meet your unique needs and budget. Whether you're a startup, a growing business, or an established enterprise, our affordable packages ensure you get the best value for your investment. Let us help you bring your vision to life with stunning designs and seamless functionality."
+      },
+      "webRedesign": {
+        "title": "AFFORDABLE PRICES WEBSITE REDESIGN",
+        "description": "We offer competitive prices for website redesign, tailored to refresh your online presence and meet your evolving needs. Whether you're looking to modernize your design, improve functionality, or enhance user experience, our affordable packages ensure you get the best value for your investment. Let us help you revitalize your vision with stunning designs and seamless functionality."
+      },
+      "graphicsDesign": {
+        "title": "AFFORDABLE PRICES GRAPHICS DESIGN",
+        "description": "We offer good competitive prices for graphics design, tailored to meet your unique needs and budget. Whether you're a startup, a growing business, or an established enterprise, our affordable packages ensure you get the best value for your investment. Let us help you bring your vision to life with stunning designs and seamless functionality."
+      },
+      "slider": {
+        "alt": "Pricing Feature Image"
+      }
+    },
+    "specialPricing": {
+      "title": "Our Special Pricing"
+    },
+    "packages": {
+      "title": "Our Packages"
+    },
+    "webRedesignPackage": {
+      "title": "WEB REDESIGN PACKAGE",
+      "features": {
+        "threeRedesigns": "3 Website Redesigns",
+        "freeHosting": "Free hosting and domain for 1 year",
+        "visibility": "Increased online visibility (Google)",
+        "analytics": "Google Analysis Training (if wanted)",
+        "marketing": "Free Marketing",
+        "priceNote": "price may change depending on the sizes of the websites",
+        "support": "24/7/365 Tech Support"
+      }
+    },
+    "graphicDesignPackage": {
+      "title": "GRAPHIC DESIGN",
+      "features": {
+        "fiveDesigns": "5 different designs for anything you need",
+        "consultation": "Free consultation for your needs on your designs",
+        "allTypes": "All types of designs (T-shirts, flyers, posters, etc.)",
+        "marketing": "Free Social media marketing",
+        "support": "12 hours a day Support"
+      }
+    },
+    "webDesignBasic": {
+      "title": "WEB DESIGN BASIC",
+      "features": {
+        "onePage": "1 PAGE",
+        "fivePages": "5 pages or more",
+        "contactUs": "CONTACT US",
+        "freeHosting": "Free hosting",
+        "storage": "5GB SSD Cloud Storage",
+        "ssl": "Free SSL Protection",
+        "support": "24/7/365 Tech Support"
+      }
+    },
+    "webRedesign": {
+      "title": "WEB REDESIGN",
+      "features": {
+        "basicPage": "BASIC 1 page website",
+        "fivePages": "5 pages or more",
+        "contactUs": "CONTACT US",
+        "storage": "5GB SSD Cloud Storage",
+        "ssl": "Free SSL Protection",
+        "support": "24/7/365 Tech Support"
+      }
+    },
+    "graphicDesign": {
+      "title": "GRAPHIC DESIGN",
+      "features": {
+        "standardPrice": "Standard price",
+        "varyingPrices": "Prices may vary depending on the project and design",
+        "allDesigns": "All types of designs",
+        "contactUs": "CONTACT US",
+        "helpWithNeeds": "TO HELP YOU WITH YOUR DESIGN NEEDS",
+        "support": "12 hours a day Support"
+      }
+    },
+    "webCreationPackage": {
+      "title": "WEB CREATION PACKAGE",
+      "features": {
+        "twoWebsites": "2 websites",
+        "freeHosting": "Free hosting and domain for 1 year",
+        "personalizedEmails": "Personalized Emails",
+        "fullControl": "Full Control design process",
+        "ssl": "Free SSL Protection",
+        "priceNote": "Price may change depending on the sizes of the websites",
+        "support": "24/7/365 Tech Support"
+      }
+    }
+  },
+  "portfolio": {
+    "banner": {
+      "alt": "Online Portfolio Banner"
+    },
+    "heading": "Our Portfolio",
+    "subheading": "Explore the websites we've developed and designs we've created for our clients.",
+    "videoNotSupported": "Your browser does not support the video tag.",
+    "visitSite": "Visit Site",
+    "items": {
+      "camus": {
+        "title": "Camus Salru",
+        "description": "A sleek and responsive coffee shop website showcasing their menu, locations, and online ordering system."
+      },
+      "auther": {
+        "title": "Auther",
+        "description": "Helping the author expand their online presence and connect with a broader clientele through a professional and engaging website."
+      },
+      "kabbi": {
+        "title": "Kabbi Chuad",
+        "description": "Website designed for Kabbi Chuad, a popular YouTuber, showcasing their journey, videos, and collaborations."
+      },
+      "productLaunch": {
+        "title": "Product Launch Graphics",
+        "description": "Marketing materials for a product launch, including banners, flyers, and social media graphics.",
+        "alt": "Product Launch Graphics"
+      },
+      "branding": {
+        "title": "Branding Package",
+        "description": "Complete branding package for a startup, including logo, business cards, and brand guidelines.",
+        "alt": "Branding Package"
+      },
+      "socialMedia": {
+        "title": "Social Media Campaign",
+        "description": "Eye-catching graphics for a social media campaign, designed to boost engagement and brand awareness.",
+        "alt": "Social Media Campaign"
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "form": {
+      "name": "Your Name",
+      "email": "Your Email",
+      "phone": "Your Phone",
+      "message": "Message",
+      "send": "SEND"
+    }
+  },
+  "services": {
+    "heading": "Our Services",
+    "webdev": {
+      "title": "Website Development",
+      "description": "Freelance Solutions offers top-notch website development services tailored to meet your unique needs. Our team of experts ensures that your website is not only visually appealing but also highly functional and optimized for performance. By choosing Freelance Solutions, you gain access to innovative designs, cutting-edge technologies, and a commitment to delivering exceptional results that help your business thrive in the digital world.",
+      "alt": "Website Development"
+    },
+    "redesign": {
+      "title": "Website Redesign",
+      "description": "Freelance Solutions specializes in website redesign services that breathe new life into your online presence. Our team of skilled designers and developers work closely with you to understand your vision and goals, ensuring that the redesigned website not only looks stunning but also enhances user experience and functionality. With our expertise, we transform outdated websites into modern, responsive, and visually appealing platforms that captivate your audience and drive results.",
+      "alt": "Website Redesign"
+    },
+    "graphics": {
+      "title": "Graphic Design",
+      "description": "Freelance Solutions offers exceptional graphic design services that elevate your brand's visual identity. Our talented designers create stunning graphics, logos, and marketing materials tailored to your specific needs. With a focus on creativity and innovation, we ensure that your designs not only capture attention but also effectively communicate your message. Trust Freelance Solutions to bring your ideas to life with captivating visuals that leave a lasting impression.",
+      "alt": "Graphic Design"
+    }
+  },
+  "common": {
+    "readMore": "Read More",
+    "contactUs": "Contact Us",
+    "seeDetail": "See Detail",
+    "subscribe": "Subscribe",
+    "loading": "Loading..."
+  }
+}

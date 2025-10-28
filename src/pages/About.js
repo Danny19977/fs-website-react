@@ -5,8 +5,10 @@ import '../styles/style.css';
 import '../styles/responsive.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { useTranslation } from 'react-i18next';
 
 const About = ({ darkMode, setDarkMode }) => {
+  const { t } = useTranslation();
   return (
     <div className="hero_area">
   <FSNavbar />
@@ -17,11 +19,11 @@ const About = ({ darkMode, setDarkMode }) => {
               <ScrollAnimatedElement animation="slide-in-left" delay={0}>
                 <div className="detail-box">
                   <div className="heading_container">
-                    <h2>About Us</h2>
-                    <h4>Bringing Your Digital Vision to Life</h4>
+                    <h2>{t('about.title')}</h2>
+                    <h4>{t('about.subtitle')}</h4>
                   </div>
-                <p>At Freelance Solutions, we don’t just build websites or design graphics—we create digital experiences that drive success. Whether you’re a small business, a growing brand, or an individual looking to establish a strong online presence, we bring your ideas to life with creativity, innovation, and precision.</p>
-                <p>Our passion lies in helping businesses thrive in today’s fast-moving digital world. From website creation to website redesign, from graphic design to automation solutions, we offer tailored freelance services that help you stand out, attract customers, and streamline your workflow.</p>
+                <p>{t('about.intro.p1')}</p>
+                <p>{t('about.intro.p2')}</p>
                 <p><strong>What We Do</strong><br />
                   ✔ Website Creation – Your website is your digital storefront. We design and develop sleek, user-friendly, and high-performing websites that engage visitors and turn them into loyal customers.<br />
                   ✔ Website Redesign – Is your website outdated, slow, or not bringing in results? We revamp and optimize your site to enhance user experience, boost speed, and improve search rankings.<br />
@@ -29,14 +31,14 @@ const About = ({ darkMode, setDarkMode }) => {
                   ✔ Systems and Task Automation – Save time, reduce errors, and focus on what truly matters! We implement smart automation solutions that streamline repetitive tasks, manage workflows, and improve efficiency, so your business runs smoothly 24/7.<br />
                   ✔ Graphic Design – First impressions matter! Whether you need a logo, social media graphics, business cards, or branding materials, we craft stunning visuals that make your brand stand out and leave a lasting impact.
                 </p>
-                <p><strong>Why Choose Freelance Solutions?</strong><br />
-                  🚀 Custom Solutions for Every Business – We tailor every project to your unique needs and goals.<br />
-                  🎨 Creativity Meets Functionality – Our work is not just visually stunning but also designed to perform.<br />
-                  💡 Results-Driven Approach – We focus on delivering designs and websites that convert visitors into customers.<br />
-                  🤝 Your Success is Our Priority – We’re not just a service provider; we’re your digital partners.
+                <p><strong>{t('about.whyChooseUs.title')}</strong><br />
+                  🚀 {t('about.whyChooseUs.items.customSolutions')}<br />
+                  🎨 {t('about.whyChooseUs.items.creativity')}<br />
+                  💡 {t('about.whyChooseUs.items.resultsDriven')}<br />
+                  🤝 {t('about.whyChooseUs.items.priority')}
                 </p>
-                <p>Let's Build Something Amazing Together! Your online presence matters, and at Freelance Solutions, we're here to help you make a powerful impact. Whether you need a brand-new website, a fresh redesign, or digital solutions that save you time and money, we're ready to bring your vision to life.</p>
-                <p>📩 Let's talk! Contact us today and take your business to the next level. 🚀</p>
+                <p>{t('about.conclusion.p1')}</p>
+                <p>📩 {t('about.conclusion.p2')} 🚀</p>
               </div>
               </ScrollAnimatedElement>
             </div>
@@ -57,11 +59,11 @@ const About = ({ darkMode, setDarkMode }) => {
             <div className="col-md-3">
               <ScrollAnimatedElement animation="fade-up" delay={0}>
                 <div className="info_contact">
-                  <h4>Address</h4>
+                  <h4>{t('home.footer.address.title')}</h4>
                   <div className="contact_link_box">
-                    <a href=""><span>South Africa Johannesburg</span></a>
-                    <a href="https://wa.me/+27633377293" target="_blank"><span>Call +27 633 377 293</span></a>
-                    <a href=""><span style={{ fontSize: '0.9em' }}>freelancesolutions46@gmail.com</span></a>
+                    <a href=""><span>{t('home.footer.address.location')}</span></a>
+                    <a href="https://wa.me/+27633377293" target="_blank"><span>{t('home.footer.address.phone')}</span></a>
+                    <a href=""><span style={{ fontSize: '0.9em' }}>{t('home.footer.address.email')}</span></a>
                   </div>
                 </div>
                 <div className="info_social">
@@ -73,28 +75,28 @@ const About = ({ darkMode, setDarkMode }) => {
             </div>
             <div className="col-md-3">
               <div className="info_link_box">
-                <h4>Links</h4>
+                <h4>{t('home.footer.links.title')}</h4>
                 <div className="info_links">
-                  <a href="/">Home</a>
-                  <a className="active" href="/about">About</a>
-                  <a href="/service">Services</a>
-                  <a href="/price">Specail Pricing</a>
-                  <a href="/portfolio">Portfolio</a>
-                  <a href="/contact">Contact Us</a>
+                  <a href="/">{t('nav.home')}</a>
+                  <a className="active" href="/about">{t('nav.about')}</a>
+                  <a href="/service">{t('nav.services')}</a>
+                  <a href="/price">{t('nav.price')}</a>
+                  <a href="/portfolio">{t('nav.portfolio')}</a>
+                  <a href="/contact">{t('nav.contact')}</a>
                 </div>
               </div>
             </div>
             <div className="col-md-3">
               <div className="info_detail">
-                <h4>Info</h4>
-                <p>Freelance Solutions crafts impactful online and print presences through expert website development and graphic design. We aim to be the trusted creative hub for all visual and web needs, offering reliable and innovative services. Our skills include building and revamping websites using various technologies and designing diverse graphics to help clients stand out.</p>
+                <h4>{t('home.footer.info.title')}</h4>
+                <p>{t('home.footer.info.description')}</p>
               </div>
             </div>
             <div className="col-md-3 mb-0">
-              <h4>Subscribe</h4>
+              <h4>{t('home.footer.subscribe.title')}</h4>
               <form className="subscribe-form">
-                <input type="text" placeholder="Enter email" />
-                <button type="submit">Subscribe</button>
+                <input type="text" placeholder={t('home.footer.subscribe.placeholder')} />
+                <button type="submit">{t('home.footer.subscribe.button')}</button>
               </form>
             </div>
           </div>

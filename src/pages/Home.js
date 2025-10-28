@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faAngleLeft, faAngleRight, faQuoteLeft, faMapMarker, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
+import { useTranslation } from 'react-i18next';
+import PriceDisplay from '../components/PriceDisplay';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,6 +34,7 @@ if (typeof window !== 'undefined' && !window.confettiEffect) {
 }
 
 const Home = ({ darkMode, setDarkMode }) => {
+  const { t } = useTranslation();
   const [showThankYou, setShowThankYou] = useState(false);
   const handleSubscribe = (e) => {
     e.preventDefault();
@@ -53,14 +56,14 @@ const Home = ({ darkMode, setDarkMode }) => {
             <Carousel.Item>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '80vh', color: '#fff', background: 'none' }}>
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center' }}>
-                  <h1 style={{ fontWeight: 'bold', marginBottom: '25px', fontSize: '2.5rem' }}>WELCOME TO<br />FREELANCE SOLUTIONS</h1>
-                  <p style={{ fontSize: '1.2rem', marginBottom: '30px' }}>We deliver exceptional web development and comprehensive design solutions. Let us help you create a stunning online presence that stands out from the competition.</p>
+                  <h1 style={{ fontWeight: 'bold', marginBottom: '25px', fontSize: '2.5rem' }}>{t('home.welcome.title')}<br />{t('home.welcome.subtitle')}</h1>
+                  <p style={{ fontSize: '1.2rem', marginBottom: '30px' }}>{t('home.welcome.description')}</p>
                   <div className="btn-box" style={{ display: 'flex', justifyContent: 'center' }}>
                     <a href="/service" className="about-btn btn-blue-1" style={{marginRight:'18px'}}>
-                      Read More
+                      {t('common.readMore')}
                     </a>
                     <a href="/contact" className="about-btn btn-blue-2" onClick={() => {window.confettiEffect && window.confettiEffect();}}>
-                      Contact Us
+                      {t('common.contactUs')}
                     </a>
                   </div>
                 </div>
@@ -117,8 +120,8 @@ const Home = ({ darkMode, setDarkMode }) => {
         <div className="container">
           <ScrollAnimatedElement animation="fade-up" delay={0}>
             <div className="heading_container heading_center">
-              <h1>Our Services</h1>
-              <h4>How we can help you succeed</h4>
+              <h1>{t('home.services.title')}</h1>
+              <h4>{t('home.services.subtitle')}</h4>
             </div>
           </ScrollAnimatedElement>
         </div>
@@ -131,9 +134,9 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <img src="/images/s1.svg" alt="Website Creation" />
                   </div>
                   <div className="detail-box">
-                    <h4>Website Creation</h4>
-                    <p>Your Online Presence Starts Here. Let us help you create a stunning website that stands out from the rest.</p>
-                    <a href="/service-details?service=Website%20Creation" className="btn-1">Read More <FontAwesomeIcon icon={faAngleRight} /></a>
+                    <h4>{t('home.services.webDesign.title')}</h4>
+                    <p>{t('home.services.webDesign.description')}</p>
+                    <a href="/service-details?service=Website%20Creation" className="btn-1">{t('common.readMore')} <FontAwesomeIcon icon={faAngleRight} /></a>
                   </div>
                 </div>
               </ScrollAnimatedElement>
@@ -145,9 +148,9 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <img src="/images/s2.svg" alt="Web Redesign" />
                   </div>
                   <div className="detail-box">
-                    <h4>Web Redesign</h4>
-                    <p>Is Your Website Working for You? Let us help you redesign your website for maximum impact and performance.</p>
-                    <a href="/service-details?service=Web%20Redesign" className="btn-1">Read More <FontAwesomeIcon icon={faAngleRight} /></a>
+                    <h4>{t('home.services.webRedesign.title')}</h4>
+                    <p>{t('home.services.webRedesign.description')}</p>
+                    <a href="/service-details?service=Web%20Redesign" className="btn-1">{t('common.readMore')} <FontAwesomeIcon icon={faAngleRight} /></a>
                   </div>
                 </div>
               </ScrollAnimatedElement>
@@ -159,9 +162,9 @@ const Home = ({ darkMode, setDarkMode }) => {
                     <img src="/images/s3.svg" alt="Graphic Design" />
                   </div>
                   <div className="detail-box">
-                    <h4>Graphic Design</h4>
-                    <p>Make Your Brand Unforgettable: Professional Graphic Design. Let us help you create stunning visuals that captivate your audience.</p>
-                    <a href="/service-details?service=Graphic%20Design" className="btn-1">Read More <FontAwesomeIcon icon={faAngleRight} /></a>
+                    <h4>{t('home.services.graphicDesign.title')}</h4>
+                    <p>{t('home.services.graphicDesign.description')}</p>
+                    <a href="/service-details?service=Graphic%20Design" className="btn-1">{t('common.readMore')} <FontAwesomeIcon icon={faAngleRight} /></a>
                   </div>
                 </div>
               </ScrollAnimatedElement>
@@ -179,10 +182,10 @@ const Home = ({ darkMode, setDarkMode }) => {
               <ScrollAnimatedElement animation="slide-in-left" delay={0}>
                 <div className="detail-box">
                   <div className="heading_container">
-                    <h2>About Us</h2>
+                    <h2>{t('home.about.title')}</h2>
                   </div>
-                  <p>At Freelance Solutions, we are passionate about delivering top-notch freelance services tailored to your needs. Specializing in quality web development and creative graphic design, we bring your ideas to life with clean, modern, and user-friendly designs. Whether it's building a stunning website or crafting visually compelling graphics, we're dedicated to helping your brand stand out and succeed in the digital world. Let's create something amazing together!</p>
-                  <a href="/about">Read More</a>
+                  <p>{t('home.about.description')}</p>
+                  <a href="/about">{t('common.readMore')}</a>
                 </div>
               </ScrollAnimatedElement>
             </div>
@@ -215,8 +218,8 @@ const Home = ({ darkMode, setDarkMode }) => {
               <ScrollAnimatedElement animation="slide-in-right" delay={100}>
                 <div className="detail-box">
                   <div className="heading_container">
-                    <h2>Let Freelance Solutions bring your business to the future</h2>
-                    <p>At Freelance Solutions, we're here to bring your business into the future. we create digital experiences that not only looks great but also drive growth and engagement. Let us help you stay ahead of the curve and transform your vision into a modern, future-ready reality.</p>
+                    <h2>{t('home.future.title')}</h2>
+                    <p>{t('home.future.description')}</p>
                   </div>
                 </div>
               </ScrollAnimatedElement>
@@ -237,17 +240,17 @@ const Home = ({ darkMode, setDarkMode }) => {
             <ScrollAnimatedElement animation="scale-up" delay={100}>
               <div className="box">
                 <div className="detail-box">
-                  <h2>R <span>5000</span></h2>
-                  <h6>WEB DESIGN BASIC</h6>
+                  <h2><PriceDisplay amount={5000} /></h2>
+                  <h6>{t('prices.webDesignBasic.title')}</h6>
                   <ul className="price_features">
-                    <li>1 PAGE</li>
-                    <li>5 pages or more</li>
-                    <li>CONTACT US</li>
-                    <li>Free hosting</li>
-                    <li>5GB SSD Cloud Storage</li>
-                    <li>Free SSL Protection</li>
-                    <li>24/7/365 Tech Support</li>
-                    <li style={{ fontSize: '10px' }}>E-commerce website pricing varies and will be determined upon consultation.</li>
+                    <li>{t('prices.webDesignBasic.features.onePage')}</li>
+                    <li>{t('prices.webDesignBasic.features.fivePages')}</li>
+                    <li>{t('prices.webDesignBasic.features.contactUs')}</li>
+                    <li>{t('prices.webDesignBasic.features.freeHosting')}</li>
+                    <li>{t('prices.webDesignBasic.features.storage')}</li>
+                    <li>{t('prices.webDesignBasic.features.ssl')}</li>
+                    <li>{t('prices.webDesignBasic.features.support')}</li>
+                    <li style={{ fontSize: '10px' }}>{t('prices.webDesignBasic.features.ecommerceNote')}</li>
                   </ul>
                 </div>
                 <div className="btn-box">
@@ -258,15 +261,15 @@ const Home = ({ darkMode, setDarkMode }) => {
             <ScrollAnimatedElement animation="scale-up" delay={200}>
               <div className="box">
                 <div className="detail-box">
-                  <h2>R <span>2500</span></h2>
-                  <h6>WEB REDESIGN</h6>
+                  <h2><PriceDisplay amount={2500} /></h2>
+                  <h6>{t('prices.webRedesign.title')}</h6>
                   <ul className="price_features">
-                    <li>BASIC 1 page website</li>
-                    <li>5 pages or more</li>
-                    <li>CONTACT US</li>
-                    <li>5GB SSD Cloud Storage</li>
-                    <li>Free SSL Protection</li>
-                    <li>24/7/365 Tech Support</li>
+                    <li>{t('prices.webRedesign.features.basicPage')}</li>
+                    <li>{t('prices.webRedesign.features.fivePages')}</li>
+                    <li>{t('prices.webRedesign.features.contactUs')}</li>
+                    <li>{t('prices.webRedesign.features.storage')}</li>
+                    <li>{t('prices.webRedesign.features.ssl')}</li>
+                    <li>{t('prices.webRedesign.features.support')}</li>
                     <li><br /></li>
                   </ul>
                 </div>
@@ -278,15 +281,15 @@ const Home = ({ darkMode, setDarkMode }) => {
             <ScrollAnimatedElement animation="scale-up" delay={300}>
               <div className="box">
                 <div className="detail-box">
-                  <h2>R <span>900</span></h2>
-                  <h6>GRAPHIC DESIGN</h6>
+                  <h2><PriceDisplay amount={900} /></h2>
+                  <h6>{t('prices.graphicDesign.title')}</h6>
                   <ul className="price_features">
-                    <li>Standard price</li>
-                    <li>Prices may vary depending on the project and design</li>
-                    <li>All types of designs</li>
-                    <li>CONTACT US</li>
-                    <li>TO HELP YOU WITH YOUR DESIGN NEEDS</li>
-                    <li>12hours a day Support</li>
+                    <li>{t('prices.graphicDesign.features.standardPrice')}</li>
+                    <li>{t('prices.graphicDesign.features.varyingPrices')}</li>
+                    <li>{t('prices.graphicDesign.features.allDesigns')}</li>
+                    <li>{t('prices.graphicDesign.features.contactUs')}</li>
+                    <li>{t('prices.graphicDesign.features.helpWithNeeds')}</li>
+                    <li>{t('prices.graphicDesign.features.support')}</li>
                   </ul>
                 </div>
                 <div className="btn-box">
@@ -320,7 +323,7 @@ const Home = ({ darkMode, setDarkMode }) => {
         <div className="container">
           <ScrollAnimatedElement animation="fade-up" delay={0}>
             <div className="heading_container heading_center">
-              <h2>Get In Touch</h2>
+              <h2>{t('home.contact.title')}</h2>
             </div>
           </ScrollAnimatedElement>
           <div className="row">
@@ -328,11 +331,11 @@ const Home = ({ darkMode, setDarkMode }) => {
               <ScrollAnimatedElement animation="scale-up" delay={200}>
                 <div className="form_container">
                   <form id="contact-form">
-                    <div><input type="text" name="user_name" placeholder="Your Name" required /></div>
-                    <div><input type="email" name="user_email" placeholder="Your Email" required /></div>
-                    <div><input type="text" name="user_phone" placeholder="Your Phone" required /></div>
-                    <div><input type="text" name="message" className="message-box" placeholder="Message" required /></div>
-                    <div className="btn_box "><button type="submit" id="send-button">SEND</button></div>
+                    <div><input type="text" name="user_name" placeholder={t('home.contact.form.name')} required /></div>
+                    <div><input type="email" name="user_email" placeholder={t('home.contact.form.email')} required /></div>
+                    <div><input type="text" name="user_phone" placeholder={t('home.contact.form.phone')} required /></div>
+                    <div><input type="text" name="message" className="message-box" placeholder={t('home.contact.form.message')} required /></div>
+                    <div className="btn_box "><button type="submit" id="send-button">{t('home.contact.form.send')}</button></div>
                   </form>
                 </div>
               </ScrollAnimatedElement>
@@ -348,11 +351,11 @@ const Home = ({ darkMode, setDarkMode }) => {
             <div className="col-md-3">
               <ScrollAnimatedElement animation="fade-up" delay={0}>
                 <div className="info_contact">
-                  <h4>Address</h4>
+                  <h4>{t('home.footer.address.title')}</h4>
                   <div className="contact_link_box">
-                    <a href=""><FontAwesomeIcon icon={faMapMarker} /> <span>South Africa, Gauteng</span></a>
-                    <a href="https://wa.me/+27633377293" target="_blank"><FontAwesomeIcon icon={faPhone} /> <span>Call +27 633 377 293</span></a>
-                    <a href=""><FontAwesomeIcon icon={faEnvelope} /> <span style={{ fontSize: '0.9em' }}>freelancesolutions46@gmail.com</span></a>
+                    <a href=""><FontAwesomeIcon icon={faMapMarker} /> <span>{t('home.footer.address.location')}</span></a>
+                    <a href="https://wa.me/+27633377293" target="_blank"><FontAwesomeIcon icon={faPhone} /> <span>{t('home.footer.address.phone')}</span></a>
+                    <a href=""><FontAwesomeIcon icon={faEnvelope} /> <span style={{ fontSize: '0.9em' }}>{t('home.footer.address.email')}</span></a>
                   </div>
                 </div>
                 <div className="info_social">
@@ -365,14 +368,14 @@ const Home = ({ darkMode, setDarkMode }) => {
             <div className="col-md-3">
               <ScrollAnimatedElement animation="fade-up" delay={100}>
                 <div className="info_link_box">
-                  <h4>Links</h4>
+                  <h4>{t('home.footer.links.title')}</h4>
                   <div className="info_links">
-                    <a className="active" href="/"><img src="/images/nav-bullet.png" alt="" /> Home</a>
-                    <a href="/about"><img src="/images/nav-bullet.png" alt="" /> About</a>
-                    <a href="/service"><img src="/images/nav-bullet.png" alt="" /> Services</a>
-                    <a href="/price"><img src="/images/nav-bullet.png" alt="" /> Specail Pricing</a>
-                    <a href="/portfolio"><img src="/images/nav-bullet.png" alt="" /> Portfolio</a>
-                    <a href="/contact"><img src="/images/nav-bullet.png" alt="" /> Contact Us</a>
+                    <a className="active" href="/"><img src="/images/nav-bullet.png" alt="" /> {t('nav.home')}</a>
+                    <a href="/about"><img src="/images/nav-bullet.png" alt="" /> {t('nav.about')}</a>
+                    <a href="/service"><img src="/images/nav-bullet.png" alt="" /> {t('nav.services')}</a>
+                    <a href="/price"><img src="/images/nav-bullet.png" alt="" /> {t('nav.price')}</a>
+                    <a href="/portfolio"><img src="/images/nav-bullet.png" alt="" /> {t('nav.portfolio')}</a>
+                    <a href="/contact"><img src="/images/nav-bullet.png" alt="" /> {t('nav.contact')}</a>
                   </div>
                 </div>
               </ScrollAnimatedElement>
@@ -380,23 +383,23 @@ const Home = ({ darkMode, setDarkMode }) => {
             <div className="col-md-3">
               <ScrollAnimatedElement animation="fade-up" delay={200}>
                 <div className="info_detail">
-                  <h4>Info</h4>
-                  <p>Freelance Solutions crafts impactful online and print presences through expert website development and graphic design. We aim to be the trusted creative hub for all visual and web needs, offering reliable and innovative services. Our skills include building and revamping websites using various technologies and designing diverse graphics to help clients stand out.</p>
+                  <h4>{t('home.footer.info.title')}</h4>
+                  <p>{t('home.footer.info.description')}</p>
                 </div>
               </ScrollAnimatedElement>
             </div>
             <div className="col-md-3 mb-0">
               <ScrollAnimatedElement animation="fade-up" delay={300}>
-                <h4>Subscribe</h4>
+                <h4>{t('home.footer.subscribe.title')}</h4>
                 <form onSubmit={handleSubscribe} className="subscribe-form">
-                  <input type="text" placeholder="Enter email" required />
-                  <button type="submit">Subscribe</button>
+                  <input type="text" placeholder={t('home.footer.subscribe.placeholder')} required />
+                  <button type="submit">{t('home.footer.subscribe.button')}</button>
                 </form>
               </ScrollAnimatedElement>
               {showThankYou && (
                 <div className="thank-you-modal" style={{ background: '#007bff', color: '#fff', padding: '32px 24px 24px 24px', borderRadius: '12px', maxWidth: '350px', width: '90vw', boxShadow: '0 4px 24px rgba(0,0,0,0.15)', display: 'flex', flexDirection: 'column', alignItems: 'center', position: 'fixed', top: 0, left: 0, zIndex: 9999 }}>
-                  <h4 style={{ marginBottom: '16px' }}>Thank you for subscribing!</h4>
-                  <button onClick={() => setShowThankYou(false)} style={{ marginTop: '24px', background: '#fff', color: '#007bff', border: 'none', padding: '10px 32px', borderRadius: '24px', fontWeight: 600, cursor: 'pointer' }}>Close</button>
+                  <h4 style={{ marginBottom: '16px' }}>{t('home.footer.subscribe.thankYou')}</h4>
+                  <button onClick={() => setShowThankYou(false)} style={{ marginTop: '24px', background: '#fff', color: '#007bff', border: 'none', padding: '10px 32px', borderRadius: '24px', fontWeight: 600, cursor: 'pointer' }}>{t('home.footer.subscribe.close')}</button>
                 </div>
               )}
             </div>

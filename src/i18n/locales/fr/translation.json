@@ -1,0 +1,234 @@
+{
+  "about": {
+    "title": "À Propos de Nous",
+    "subtitle": "Donnons Vie à Votre Vision Numérique",
+    "intro": {
+      "p1": "Chez Freelance Solutions, nous ne nous contentons pas de créer des sites web ou de concevoir des graphiques, nous créons des expériences numériques qui favorisent le succès. Que vous soyez une petite entreprise, une marque en croissance ou un particulier cherchant à établir une forte présence en ligne, nous donnons vie à vos idées avec créativité, innovation et précision.",
+      "p2": "Notre passion est d'aider les entreprises à prospérer dans le monde numérique d'aujourd'hui en rapide évolution. De la création de sites web à leur refonte, du design graphique aux solutions d'automatisation, nous proposons des services freelance sur mesure qui vous aident à vous démarquer, à attirer des clients et à optimiser votre flux de travail."
+    },
+    "whatWeDo": {
+      "title": "Ce Que Nous Faisons",
+      "items": {
+        "websiteCreation": "Création de Sites Web – Votre site web est votre vitrine numérique. Nous concevons et développons des sites web élégants, conviviaux et performants qui engagent les visiteurs et les transforment en clients fidèles.",
+        "websiteRedesign": "Refonte de Sites Web – Votre site web est-il dépassé, lent ou n'apporte-t-il pas de résultats ? Nous rénovons et optimisons votre site pour améliorer l'expérience utilisateur, augmenter la vitesse et améliorer le référencement.",
+        "onlinePresence": "Présence en Ligne – Être en ligne n'est plus une option, c'est une nécessité. Nous aidons les entreprises à construire une présence numérique forte et stratégique grâce au référencement, aux réseaux sociaux, au branding et au marketing de contenu, garantissant votre visibilité et votre compétitivité.",
+        "automation": "Automatisation des Systèmes et des Tâches – Gagnez du temps, réduisez les erreurs et concentrez-vous sur l'essentiel ! Nous mettons en place des solutions d'automatisation intelligentes qui rationalisent les tâches répétitives, gèrent les flux de travail et améliorent l'efficacité.",
+        "graphicDesign": "Design Graphique – La première impression compte ! Que vous ayez besoin d'un logo, de graphiques pour les réseaux sociaux, de cartes de visite ou de matériel de marque, nous créons des visuels époustouflants qui font ressortir votre marque."
+      }
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi Choisir Freelance Solutions ?",
+      "items": {
+        "customSolutions": "Solutions Personnalisées pour Chaque Entreprise – Nous adaptons chaque projet à vos besoins et objectifs uniques.",
+        "creativity": "La Créativité Rencontre la Fonctionnalité – Notre travail n'est pas seulement visuellement magnifique mais aussi conçu pour performer.",
+        "resultsDriven": "Approche Axée sur les Résultats – Nous nous concentrons sur la création de designs et de sites web qui convertissent les visiteurs en clients.",
+        "priority": "Votre Succès est Notre Priorité – Nous ne sommes pas qu'un prestataire de services, nous sommes vos partenaires numériques."
+      }
+    },
+    "conclusion": {
+      "p1": "Construisons Quelque Chose d'Extraordinaire Ensemble ! Votre présence en ligne est importante, et chez Freelance Solutions, nous sommes là pour vous aider à faire un impact puissant. Que vous ayez besoin d'un tout nouveau site web, d'une refonte fraîche ou de solutions numériques qui vous font gagner du temps et de l'argent, nous sommes prêts à donner vie à votre vision.",
+      "p2": "Parlons-en ! Contactez-nous aujourd'hui et amenez votre entreprise au niveau supérieur."
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "contact": "Contact",
+    "price": "Prix spéciaux"
+  },
+  "home": {
+    "footer": {
+      "links": {
+        "title": "Liens",
+        "home": "Accueil",
+        "about": "À Propos",
+        "services": "Services",
+        "pricing": "Prix",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+      },
+      "copyright": "© {{year}} Tous droits réservés par Freelance Solutions"
+    },
+    "welcome": {
+      "title": "BIENVENUE À",
+      "subtitle": "FREELANCE SOLUTIONS",
+      "description": "Nous fournissons des solutions exceptionnelles de développement web et de conception complète. Laissez-nous vous aider à créer une présence en ligne remarquable qui se démarque de la concurrence."
+    },
+    "services": {
+      "title": "Nos Services",
+      "subtitle": "Comment nous pouvons vous aider à réussir",
+      "webDesign": {
+        "title": "Création de Site Web",
+        "description": "Votre présence en ligne commence ici. Laissez-nous vous aider à créer un site web époustouflant qui se démarque."
+      },
+      "webRedesign": {
+        "title": "Refonte Web",
+        "description": "Votre site web est-il efficace ? Laissez-nous vous aider à le redessiner pour un impact et des performances maximales."
+      },
+      "graphicDesign": {
+        "title": "Design Graphique",
+        "description": "Rendez votre marque inoubliable : Design graphique professionnel. Laissez-nous vous aider à créer des visuels captivants qui séduisent votre audience."
+      }
+    },
+    "about": {
+      "title": "À Propos de Nous",
+      "description": "Chez Freelance Solutions, nous sommes passionnés par la fourniture de services freelance de haute qualité adaptés à vos besoins. Spécialisés dans le développement web de qualité et le design graphique créatif, nous donnons vie à vos idées avec des designs propres, modernes et conviviaux. Qu'il s'agisse de construire un site web magnifique ou de créer des graphiques visuellement convaincants, nous nous engageons à aider votre marque à se démarquer et à réussir dans le monde numérique. Créons ensemble quelque chose d'extraordinaire !"
+    },
+    "future": {
+      "title": "Laissez Freelance Solutions amener votre entreprise vers l'avenir",
+      "description": "Chez Freelance Solutions, nous sommes là pour amener votre entreprise vers l'avenir. Nous créons des expériences numériques qui non seulement sont superbes mais qui génèrent également croissance et engagement. Laissez-nous vous aider à rester en avance et à transformer votre vision en une réalité moderne et prête pour l'avenir."
+    },
+    "contact": {
+      "title": "Contactez-Nous",
+      "form": {
+        "name": "Votre Nom",
+        "email": "Votre Email",
+        "phone": "Votre Téléphone",
+        "message": "Message",
+        "send": "ENVOYER"
+      }
+    },
+    "footer": {
+      "address": {
+        "title": "Adresse",
+        "location": "Afrique du Sud, Gauteng",
+        "phone": "Appelez +27 633 377 293",
+        "email": "freelancesolutions46@gmail.com"
+      },
+      "links": {
+        "title": "Liens",
+        "home": "Accueil",
+        "about": "À Propos",
+        "services": "Services",
+        "pricing": "Prix",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
+      },
+      "copyright": "© {{year}} Tous droits réservés par Freelance Solutions",
+      "info": {
+        "title": "Info",
+        "description": "Freelance Solutions crée des présences en ligne et imprimées percutantes grâce à un développement web expert et un design graphique. Nous visons à être le centre créatif de confiance pour tous les besoins visuels et web, offrant des services fiables et innovants. Nos compétences incluent la construction et la rénovation de sites web utilisant diverses technologies et la conception de graphiques variés pour aider les clients à se démarquer."
+      },
+      "subscribe": {
+        "title": "S'abonner",
+        "placeholder": "Entrez votre email",
+        "button": "S'abonner",
+        "thankYou": "Merci de vous être abonné !",
+        "close": "Fermer"
+      }
+    }
+  },
+  "prices": {
+    "webDesignBasic": {
+      "title": "CONCEPTION WEB DE BASE",
+      "features": {
+        "onePage": "1 PAGE",
+        "fivePages": "5 pages ou plus",
+        "contactUs": "CONTACTEZ-NOUS",
+        "freeHosting": "Hébergement gratuit",
+        "storage": "5 Go de stockage cloud SSD",
+        "ssl": "Protection SSL gratuite",
+        "support": "Support technique 24/7/365"
+      }
+    },
+    "webRedesign": {
+      "title": "REFONTE DE SITE WEB",
+      "features": {
+        "basicPage": "Site web basique 1 page",
+        "fivePages": "5 pages ou plus",
+        "contactUs": "CONTACTEZ-NOUS",
+        "storage": "5 Go de stockage cloud SSD",
+        "ssl": "Protection SSL gratuite",
+        "support": "Support technique 24/7/365"
+      }
+    },
+    "graphicDesign": {
+      "title": "CONCEPTION GRAPHIQUE",
+      "features": {
+        "standardPrice": "Prix standard",
+        "varyingPrices": "Les prix peuvent varier selon le projet et le design",
+        "allDesigns": "Tous types de designs",
+        "contactUs": "CONTACTEZ-NOUS",
+        "helpWithNeeds": "POUR VOUS AIDER AVEC VOS BESOINS EN DESIGN",
+        "support": "Support 12 heures par jour"
+      }
+    },
+    "webCreationPackage": {
+      "title": "FORFAIT CRÉATION WEB",
+      "features": {
+        "twoWebsites": "2 sites web",
+        "freeHosting": "Hébergement et domaine gratuits pendant 1 an",
+        "personalizedEmails": "Emails personnalisés",
+        "fullControl": "Processus de design avec contrôle total",
+        "ssl": "Protection SSL gratuite",
+        "priceNote": "Le prix peut varier selon la taille des sites web",
+        "support": "Support technique 24/7/365"
+      }
+    }
+  },
+  "common": {
+    "readMore": "Lire plus",
+    "contactUs": "Contactez-nous",
+    "seeDetail": "Voir les détails",
+    "subscribe": "S'abonner",
+    "loading": "Chargement..."
+  },
+  "portfolio": {
+    "banner": {
+      "alt": "Bannière du Portfolio en Ligne"
+    },
+    "heading": "Notre Portfolio",
+    "subheading": "Découvrez les sites web que nous avons développés et les designs que nous avons créés pour nos clients.",
+    "videoNotSupported": "Votre navigateur ne prend pas en charge la lecture vidéo.",
+    "visitSite": "Visiter le Site",
+    "items": {
+      "camus": {
+        "title": "Camus Salru",
+        "description": "Un site web élégant et réactif pour un café, présentant leur menu, leurs emplacements et leur système de commande en ligne."
+      },
+      "auther": {
+        "title": "Auther",
+        "description": "Aider l'auteur à développer sa présence en ligne et à se connecter avec une clientèle plus large grâce à un site web professionnel et engageant."
+      },
+      "kabbi": {
+        "title": "Kabbi Chuad",
+        "description": "Site web conçu pour Kabbi Chuad, un YouTubeur populaire, mettant en valeur son parcours, ses vidéos et ses collaborations."
+      },
+      "productLaunch": {
+        "title": "Graphiques de Lancement de Produit",
+        "description": "Matériel marketing pour un lancement de produit, incluant bannières, flyers et graphiques pour les réseaux sociaux.",
+        "alt": "Graphiques de Lancement de Produit"
+      },
+      "branding": {
+        "title": "Pack de Marque",
+        "description": "Pack de marque complet pour une startup, comprenant logo, cartes de visite et charte graphique.",
+        "alt": "Pack de Marque"
+      },
+      "socialMedia": {
+        "title": "Campagne sur les Réseaux Sociaux",
+        "description": "Graphiques accrocheurs pour une campagne sur les réseaux sociaux, conçus pour augmenter l'engagement et la notoriété de la marque.",
+        "alt": "Campagne sur les Réseaux Sociaux"
+      }
+    }
+  },
+  "services": {
+    "heading": "Nos Services",
+    "webdev": {
+      "title": "Développement Web",
+      "description": "Freelance Solutions propose des services de développement web de premier ordre adaptés à vos besoins uniques. Notre équipe d'experts s'assure que votre site web est non seulement visuellement attrayant mais aussi hautement fonctionnel et optimisé pour la performance. En choisissant Freelance Solutions, vous accédez à des designs innovants, des technologies de pointe et un engagement à fournir des résultats exceptionnels.",
+      "alt": "Développement Web"
+    },
+    "redesign": {
+      "title": "Refonte de Site Web",
+      "description": "Freelance Solutions se spécialise dans les services de refonte de sites web qui insufflent une nouvelle vie à votre présence en ligne. Notre équipe de designers et développeurs qualifiés travaille en étroite collaboration avec vous pour comprendre votre vision et vos objectifs, garantissant que le site web redessiné est non seulement magnifique mais améliore aussi l'expérience utilisateur et la fonctionnalité.",
+      "alt": "Refonte de Site Web"
+    },
+    "graphics": {
+      "title": "Design Graphique",
+      "description": "Freelance Solutions propose des services de design graphique exceptionnels qui élèvent l'identité de votre marque. Nos designers talentueux créent des graphiques, logos et supports marketing époustouflants adaptés à vos besoins spécifiques. Avec un accent sur la créativité et l'innovation, nous nous assurons que vos designs captivent l'attention et communiquent efficacement votre message.",
+      "alt": "Design Graphique"
+    }
+  }
+}

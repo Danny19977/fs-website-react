@@ -1,0 +1,51 @@
+.language-selector {
+  position: relative;
+  min-width: 180px;
+}
+
+.language-selector select {
+  width: 100%;
+  padding: 8px 12px 8px 40px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.language-selector select:hover {
+  border-color: #0595b9;
+}
+
+.language-selector select:focus {
+  outline: none;
+  border-color: #0595b9;
+  box-shadow: 0 0 0 2px rgba(5, 149, 185, 0.2);
+}
+
+/* Style for the flag in options */
+.language-selector option {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Custom dropdown arrow */
+.language-selector::after {
+  content: '';
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #666;
+  pointer-events: none;
+}

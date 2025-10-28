@@ -3,24 +3,27 @@ import FSNavbar from '../components/Navbar';
 import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
 import '../styles/style.css';
 import '../styles/responsive.css';
+import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 
 const Portfolio = ({ darkMode, setDarkMode }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="hero_area">
-  <FSNavbar />
+      <FSNavbar />
       <ScrollAnimatedElement animation="fade-up" delay={0}>
         <div className="container-fluid text-center my-3">
-          <img src="/images/online-removebg.png" alt="Online Portfolio Banner" style={{ maxWidth: '100%', height: 'auto' }} />
+          <img src="/images/online-removebg.png" alt={t('portfolio.banner.alt')} style={{ maxWidth: '100%', height: 'auto' }} />
         </div>
       </ScrollAnimatedElement>
       <section className="portfolio_section layout_padding">
         <div className="container">
           <ScrollAnimatedElement animation="fade-up" delay={100}>
             <div className="heading_container heading_center">
-              <h2>Our Portfolio</h2>
-              <p>Explore the websites we've developed and designs we've created for our clients.</p>
+              <h2>{t('portfolio.heading')}</h2>
+              <p>{t('portfolio.subheading')}</p>
             </div>
           </ScrollAnimatedElement>
           <div className="row portfolio_items justify-content-center">
@@ -35,9 +38,9 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
                     </video>
                   </div>
                   <div className="detail-box">
-                    <h4>Camus Salru</h4>
-                    <p>A sleek and responsive coffee shop website showcasing their menu, locations, and online ordering system.</p>
-                    <a href="https://www.camussarlu.com/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                    <h4>{t('portfolio.items.camus.title')}</h4>
+                    <p>{t('portfolio.items.camus.description')}</p>
+                    <a href="https://www.camussarlu.com/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">{t('portfolio.visitSite')}</a>
                   </div>
                 </div>
               </ScrollAnimatedElement>
@@ -48,13 +51,13 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
                   <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
                     <video controls style={{ width: '100%', height: 200, objectFit: 'cover' }}>
                       <source src="/video/auther.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
+                      {t('portfolio.videoNotSupported')}
                     </video>
                   </div>
                   <div className="detail-box">
-                    <h4>Auther</h4>
-                    <p>Helping the author expand their online presence and connect with a broader clientele through a professional and engaging website.</p>
-                    <a href="http://matambalukasu.com/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                    <h4>{t('portfolio.items.auther.title')}</h4>
+                    <p>{t('portfolio.items.auther.description')}</p>
+                    <a href="http://matambalukasu.com/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">{t('portfolio.visitSite')}</a>
                   </div>
                 </div>
               </ScrollAnimatedElement>
@@ -64,13 +67,13 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
                 <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
                   <video controls style={{ width: '100%', height: 200, objectFit: 'cover' }}>
                     <source src="/video/youtuber.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
+                    {t('portfolio.videoNotSupported')}
                   </video>
                 </div>
                 <div className="detail-box">
-                  <h4>Kabbi Chuad</h4>
-                  <p>Website designed for Kabbi Chuad, a popular YouTuber, showcasing their journey, videos, and collaborations.</p>
-                  <a href="https://bzp.vch.mybluehost.me/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                  <h4>{t('portfolio.items.kabbi.title')}</h4>
+                  <p>{t('portfolio.items.kabbi.description')}</p>
+                  <a href="https://bzp.vch.mybluehost.me/" className="btn btn-1 mt-2" target="_blank" rel="noopener noreferrer">{t('portfolio.visitSite')}</a>
                 </div>
               </div>
             </div>
@@ -78,33 +81,33 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
             <div className="col-md-6 col-lg-4 portfolio_item mb-4" data-category="graphics">
               <div className="box">
                 <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
-                  <img src="/images/productlaunchgraphics.png" alt="Website 1" style={{ width: '100%', height: 200, objectFit: 'cover' }} />
+                  <img src="/images/productlaunchgraphics.png" alt={t('portfolio.items.productLaunch.alt')} style={{ width: '100%', height: 200, objectFit: 'cover' }} />
                 </div>
                 <div className="detail-box">
-                  <h4>Product Launch Graphics</h4>
-                  <p>Marketing materials for a product launch, including banners, flyers, and social media graphics.</p>
+                  <h4>{t('portfolio.items.productLaunch.title')}</h4>
+                  <p>{t('portfolio.items.productLaunch.description')}</p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg-4 portfolio_item mb-4" data-category="graphics">
               <div className="box">
                 <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
-                  <img src="/images/brandingpackage.png" alt="Graphic Design 2" style={{ width: '100%', height: 200, objectFit: 'cover' }} />
+                  <img src="/images/brandingpackage.png" alt={t('portfolio.items.branding.alt')} style={{ width: '100%', height: 200, objectFit: 'cover' }} />
                 </div>
                 <div className="detail-box">
-                  <h4>Branding Package</h4>
-                  <p>Complete branding package for a startup, including logo, business cards, and brand guidelines.</p>
+                  <h4>{t('portfolio.items.branding.title')}</h4>
+                  <p>{t('portfolio.items.branding.description')}</p>
                 </div>
               </div>
             </div>
             <div className="col-md-6 col-lg-4 portfolio_item mb-4" data-category="graphics">
               <div className="box">
                 <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
-                  <img src="/images/socialmedia campaign.png" alt="Graphic Design 3" style={{ width: '100%', height: 200, objectFit: 'cover' }} />
+                  <img src="/images/socialmedia campaign.png" alt={t('portfolio.items.socialMedia.alt')} style={{ width: '100%', height: 200, objectFit: 'cover' }} />
                 </div>
                 <div className="detail-box">
-                  <h4>Social Media Campaign</h4>
-                  <p>Eye-catching graphics for a social media campaign, designed to boost engagement and brand awareness.</p>
+                  <h4>{t('portfolio.items.socialMedia.title')}</h4>
+                  <p>{t('portfolio.items.socialMedia.description')}</p>
                 </div>
               </div>
             </div>
@@ -117,11 +120,11 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
           <div className="row">
             <div className="col-md-3">
               <div className="info_contact">
-                <h4>Address</h4>
+                <h4>{t('home.footer.address.title')}</h4>
                 <div className="contact_link_box">
-                  <a href=""><span>South Africa Johannesburg</span></a>
-                  <a href="https://wa.me/+27633377293" target="_blank"><span>Call +27 633 377 293</span></a>
-                  <a href=""><span style={{ fontSize: '0.9em' }}>freelancesolutions46@gmail.com</span></a>
+                  <a href=""><span>{t('home.footer.address.location')}</span></a>
+                  <a href="https://wa.me/+27633377293" target="_blank"><span>{t('home.footer.address.phone')}</span></a>
+                  <a href=""><span style={{ fontSize: '0.9em' }}>{t('home.footer.address.email')}</span></a>
                 </div>
               </div>
               <div className="info_social">
@@ -132,28 +135,28 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
             </div>
             <div className="col-md-3">
               <div className="info_link_box">
-                <h4>Links</h4>
+                <h4>{t('home.footer.links.title')}</h4>
                 <div className="info_links">
-                  <a href="/">Home</a>
-                  <a href="/about">About</a>
-                  <a href="/service">Services</a>
-                  <a href="/price">Specail Pricing</a>
-                  <a className="active" href="/portfolio">Portfolio</a>
-                  <a href="/contact">Contact Us</a>
+                  <a href="/">{t('home.footer.links.home')}</a>
+                  <a href="/about">{t('home.footer.links.about')}</a>
+                  <a href="/service">{t('home.footer.links.services')}</a>
+                  <a href="/price">{t('home.footer.links.pricing')}</a>
+                  <a className="active" href="/portfolio">{t('home.footer.links.portfolio')}</a>
+                  <a href="/contact">{t('home.footer.links.contact')}</a>
                 </div>
               </div>
             </div>
             <div className="col-md-3">
               <div className="info_detail">
-                <h4>Info</h4>
-                <p>Freelance Solutions crafts impactful online and print presences through expert website development and graphic design. We aim to be the trusted creative hub for all visual and web needs, offering reliable and innovative services. Our skills include building and revamping websites using various technologies and designing diverse graphics to help clients stand out.</p>
+                <h4>{t('home.footer.info.title')}</h4>
+                <p>{t('home.footer.info.description')}</p>
               </div>
             </div>
             <div className="col-md-3 mb-0">
-              <h4>Subscribe</h4>
+              <h4>{t('home.footer.subscribe.title')}</h4>
               <form className="subscribe-form">
-                <input type="text" placeholder="Enter email" />
-                <button type="submit">Subscribe</button>
+                <input type="text" placeholder={t('home.footer.subscribe.placeholder')} />
+                <button type="submit">{t('home.footer.subscribe.button')}</button>
               </form>
             </div>
           </div>
@@ -162,7 +165,7 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
       {/* Footer Section */}
       <footer className="footer_section">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} All Rights Reserved By <a href="/">FREELANCE SOLUTIONS</a></p>
+          <p>{t('home.footer.copyright', { year: new Date().getFullYear() })}</p>
         </div>
       </footer>
     </div>
