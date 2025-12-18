@@ -86,7 +86,13 @@
         "email": "freelancesolutions46@gmail.com"
       },
       "links": {
-        "title": "Links"
+        "title": "Links",
+        "home": "Home",
+        "about": "About",
+        "services": "Services",
+        "pricing": "Special Pricing",
+        "portfolio": "Portfolio",
+        "contact": "Contact"
       },
       "info": {
         "title": "Info",
@@ -266,5 +272,23 @@
     "seeDetail": "See Detail",
     "subscribe": "Subscribe",
     "loading": "Loading..."
+  },
+  "cookies": {
+    "title": "We Value Your Privacy",
+    "description": "We use cookies to enhance your experience, analyze site usage, and assist in our marketing efforts.",
+    "acceptAll": "Accept All",
+    "reject": "Reject",
+    "details": "Manage Preferences",
+    "preferences": "Cookie Preferences",
+    "preferencesDesc": "Below you can manage your cookie preferences:",
+    "essential": "Essential Cookies",
+    "essentialDesc": "These cookies are necessary for the website to function properly.",
+    "analytics": "Analytics Cookies",
+    "analyticsDesc": "Help us understand how visitors interact with our website to improve user experience.",
+    "marketing": "Marketing Cookies",
+    "marketingDesc": "Used to track visitors and show personalized ads based on their interests.",
+    "rejectAll": "Reject All",
+    "back": "Back",
+    "save": "Save Preferences"
   }
 }

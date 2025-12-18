@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faAngleLeft, faAngleRight, faQuoteLeft, faMapMarker, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
 import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
+import VideoPlayer from '../components/VideoPlayer';
 import { useTranslation } from 'react-i18next';
 import PriceDisplay from '../components/PriceDisplay';
 import '../styles/style.css';
@@ -207,10 +208,13 @@ const Home = ({ darkMode, setDarkMode }) => {
             <div className="col-md-6">
               <ScrollAnimatedElement animation="slide-in-left" delay={0}>
                 <div className="video-box" style={{ position: 'relative', display: 'inline-block' }}>
-                  <video style={{ width: '100%', height: 'auto' }} controls>
-                    <source src="/video/fs.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
+                  <VideoPlayer
+                    src="/video/fs.mp4"
+                    controls
+                    width="100%"
+                    height="auto"
+                    style={{ width: '100%' }}
+                  />
                 </div>
               </ScrollAnimatedElement>
             </div>

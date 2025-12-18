@@ -230,5 +230,23 @@
       "description": "Freelance Solutions propose des services de design graphique exceptionnels qui élèvent l'identité de votre marque. Nos designers talentueux créent des graphiques, logos et supports marketing époustouflants adaptés à vos besoins spécifiques. Avec un accent sur la créativité et l'innovation, nous nous assurons que vos designs captivent l'attention et communiquent efficacement votre message.",
       "alt": "Design Graphique"
     }
+  },
+  "cookies": {
+    "title": "Nous Respectons Votre Vie Privée",
+    "description": "Nous utilisons des cookies pour améliorer votre expérience, analyser l'utilisation du site et vous aider dans nos efforts de marketing.",
+    "acceptAll": "Accepter Tout",
+    "reject": "Refuser",
+    "details": "Gérer les Préférences",
+    "preferences": "Préférences de Cookies",
+    "preferencesDesc": "Ci-dessous, vous pouvez gérer vos préférences de cookies:",
+    "essential": "Cookies Essentiels",
+    "essentialDesc": "Ces cookies sont nécessaires au bon fonctionnement du site web.",
+    "analytics": "Cookies d'Analyse",
+    "analyticsDesc": "Nous aider à comprendre comment les visiteurs interagissent avec notre site web pour améliorer l'expérience utilisateur.",
+    "marketing": "Cookies Marketing",
+    "marketingDesc": "Utilisés pour suivre les visiteurs et afficher des annonces personnalisées en fonction de leurs intérêts.",
+    "rejectAll": "Tout Refuser",
+    "back": "Retour",
+    "save": "Enregistrer les Préférences"
   }
 }

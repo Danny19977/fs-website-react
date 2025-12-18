@@ -1,6 +1,7 @@
 import React from 'react';
 import FSNavbar from '../components/Navbar';
 import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
+import VideoPlayer from '../components/VideoPlayer';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import { useTranslation } from 'react-i18next';
@@ -32,10 +33,14 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
               <ScrollAnimatedElement animation="scale-up" delay={200}>
                 <div className="box">
                   <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
-                    <video controls style={{ width: '100%', height: 200, objectFit: 'cover' }}>
-                      <source src="/video/camus.mp4" type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
+                    <VideoPlayer
+                      src="/video/camus.mp4"
+                      controls
+                      width="100%"
+                      height="200px"
+                      style={{ height: '200px' }}
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="detail-box">
                     <h4>{t('portfolio.items.camus.title')}</h4>
@@ -49,10 +54,14 @@ const Portfolio = ({ darkMode, setDarkMode }) => {
               <ScrollAnimatedElement animation="scale-up" delay={300}>
                 <div className="box">
                   <div className="img-box" style={{ background: '#f5f7fa', borderRadius: 20, overflow: 'hidden', boxShadow: '0 2px 10px rgba(3,167,211,0.08)' }}>
-                    <video controls style={{ width: '100%', height: 200, objectFit: 'cover' }}>
-                      <source src="/video/auther.mp4" type="video/mp4" />
-                      {t('portfolio.videoNotSupported')}
-                    </video>
+                    <VideoPlayer
+                      src="/video/auther.mp4"
+                      controls
+                      width="100%"
+                      height="200px"
+                      style={{ height: '200px' }}
+                      objectFit="cover"
+                    />
                   </div>
                   <div className="detail-box">
                     <h4>{t('portfolio.items.auther.title')}</h4>
