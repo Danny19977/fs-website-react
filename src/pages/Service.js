@@ -119,7 +119,7 @@ const Service = ({ darkMode, setDarkMode }) => {
       {/* Footer Section */}
       <footer className="footer_section">
         <div className="container">
-          <p>{t('home.footer.copyright', { year: new Date().getFullYear() })}</p>
+          <p>{t('© 2025 All Rights Reserved By FREELANCE SOLUTIONS', { year: new Date().getFullYear() })}</p>
         </div>
       </footer>
     </div>

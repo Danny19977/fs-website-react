@@ -414,7 +414,7 @@ const Home = ({ darkMode, setDarkMode }) => {
       {/* Footer Section */}
       <footer className="footer_section">
         <div className="container">
-          <p>&copy; {new Date().getFullYear()} All Rights Reserved By <a href="/">FREELANCE SOLUTIONS</a></p>
+          <p>{t('© 2025 All Rights Reserved By FREELANCE SOLUTIONS', { year: new Date().getFullYear() })}</p>
         </div>
       </footer>
     </div>

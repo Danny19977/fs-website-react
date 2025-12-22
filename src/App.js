@@ -16,6 +16,7 @@ const Service = lazy(() => import('./pages/Service'));
 const Price = lazy(() => import('./pages/Price'));
 const Portfolio = lazy(() => import('./pages/Portfolio'));
 const Contact = lazy(() => import('./pages/Contact'));
+const ContactInfo = lazy(() => import('./pages/ContactInfo'));
 const ServiceDetails = lazy(() => import('./pages/ServiceDetails'));
 
 // Fallback loading component
@@ -128,6 +129,14 @@ function AppRoutes() {
           element={
             <Suspense fallback={<PageFallback />}>
               <Contact darkMode={darkMode} setDarkMode={setDarkMode} />
+            </Suspense>
+          }
+        />
+        <Route
+          path="/contact-info"
+          element={
+            <Suspense fallback={<PageFallback />}>
+              <ContactInfo darkMode={darkMode} setDarkMode={setDarkMode} />
             </Suspense>
           }
         />

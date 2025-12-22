@@ -104,7 +104,8 @@
         "button": "Subscribe",
         "thankYou": "Thank you for subscribing!",
         "close": "Close"
-      }
+      },
+      "copyright": "© {{year}} FREELANCE SOLUTIONS. All rights reserved."
     }
   },
   "prices": {

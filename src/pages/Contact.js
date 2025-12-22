@@ -71,16 +71,30 @@ const Contact = ({ darkMode, setDarkMode }) => {
     trackButtonClick('contact_send', 'contact_form');
 
     try {
-      // Simulate API call (replace with actual API endpoint)
-      await new Promise((resolve) => setTimeout(resolve, 1500));
+      // Save to localStorage
+      const submission = {
+        user_name: formData.user_name,
+        user_email: formData.user_email,
+        user_phone: formData.user_phone,
+        message: formData.message,
+        timestamp: new Date().toISOString(),
+      };
+
+      // Get existing submissions
+      const existingSubmissions = localStorage.getItem('fs_contact_submissions');
+      const submissions = existingSubmissions ? JSON.parse(existingSubmissions) : [];
+      
+      // Add new submission
+      submissions.push(submission);
+      localStorage.setItem('fs_contact_submissions', JSON.stringify(submissions));
       
       setSubmitStatus('success');
       setFormData({ user_name: '', user_email: '', user_phone: '', message: '' });
       setErrors({});
       setTouched({});
 
-      // Clear success message after 3 seconds
-      setTimeout(() => setSubmitStatus(null), 3000);
+      // Clear success message after 5 seconds
+      setTimeout(() => setSubmitStatus(null), 5000);
     } catch (error) {
       setSubmitStatus('error');
       console.error('Form submission error:', error);
@@ -288,7 +302,7 @@ const Contact = ({ darkMode, setDarkMode }) => {
       {/* Footer Section */}
       <footer className="footer_section">
         <div className="container">
-          <p>{t('home.footer.copyright', { year: new Date().getFullYear() })}</p>
+          <p>{t('© 2025 All Rights Reserved By FREELANCE SOLUTIONS', { year: new Date().getFullYear() })}</p>
         </div>
       </footer>
     </div>
