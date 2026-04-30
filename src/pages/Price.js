@@ -4,7 +4,7 @@ import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
 import '../styles/style.css';
 import '../styles/responsive.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { useTranslation } from 'react-i18next';
 import PriceDisplay from '../components/PriceDisplay';
 
@@ -232,9 +232,9 @@ const Price = ({ darkMode, setDarkMode }) => {
               <div className="info_contact">
                 <h4>{t('home.footer.address.title')}</h4>
                 <div className="contact_link_box">
-                  <a href="https://wa.me/+27633377293" target="_blank"><span>{t('home.footer.address.location')}</span></a>
+                  <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer"><span>{t('home.footer.address.location')}</span></a>
                   <a href="tel:+27633377293"><span>{t('home.footer.address.phone')}</span></a>
-                  <a href=""><span style={{ fontSize: '0.9em' }}>{t('home.footer.address.email')}</span></a>
+                  <a href="/contact"><span style={{ fontSize: '0.9em' }}>{t('home.footer.address.email')}</span></a>
                 </div>
               </div>
               <div className="info_social">

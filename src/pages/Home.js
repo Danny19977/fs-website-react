@@ -3,7 +3,7 @@ import FSNavbar from '../components/Navbar';
 import { Carousel } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faAngleLeft, faAngleRight, faQuoteLeft, faMapMarker, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import ScrollAnimatedElement from '../components/ScrollAnimatedElement';
 import VideoPlayer from '../components/VideoPlayer';
 import { useTranslation } from 'react-i18next';
@@ -357,9 +357,9 @@ const Home = ({ darkMode, setDarkMode }) => {
                 <div className="info_contact">
                   <h4>{t('home.footer.address.title')}</h4>
                   <div className="contact_link_box">
-                    <a href=""><FontAwesomeIcon icon={faMapMarker} /> <span>{t('home.footer.address.location')}</span></a>
-                    <a href="https://wa.me/+27633377293" target="_blank"><FontAwesomeIcon icon={faPhone} /> <span>{t('home.footer.address.phone')}</span></a>
-                    <a href=""><FontAwesomeIcon icon={faEnvelope} /> <span style={{ fontSize: '0.9em' }}>{t('home.footer.address.email')}</span></a>
+                    <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faMapMarker} /> <span>{t('home.footer.address.location')}</span></a>
+                    <a href="https://wa.me/+27633377293" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faPhone} /> <span>{t('home.footer.address.phone')}</span></a>
+                    <a href="/contact"><FontAwesomeIcon icon={faEnvelope} /> <span style={{ fontSize: '0.9em' }}>{t('home.footer.address.email')}</span></a>
                   </div>
                 </div>
                 <div className="info_social">
@@ -420,21 +420,6 @@ const Home = ({ darkMode, setDarkMode }) => {
     </div>
   );
 };
-
-// TestimonialArrows component for controlling the testimonial carousel
-function TestimonialArrows() {
-  const event = new CustomEvent('testimonial-arrow', { detail: null });
-  return (
-    <div id="testimonial-arrows-control" style={{ display: 'flex', gap: '8px' }}>
-      <button className="carousel-control-prev blue-arrow" onClick={() => window.dispatchEvent(new CustomEvent('testimonial-arrow', { detail: 'prev' }))} aria-label="Previous">
-        <FontAwesomeIcon icon={faAngleLeft} />
-      </button>
-      <button className="carousel-control-next blue-arrow" onClick={() => window.dispatchEvent(new CustomEvent('testimonial-arrow', { detail: 'next' }))} aria-label="Next">
-        <FontAwesomeIcon icon={faAngleRight} />
-      </button>
-    </div>
-  );
-}
 
 // TestimonialCarousel component for client testimonials
 function TestimonialCarousel({ arrowsId }) {

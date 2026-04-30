@@ -252,7 +252,7 @@ export const getAllCookieData = () => {
   };
 };
 
-export default {
+const cookieUtils = {
   setCookie,
   getCookie,
   deleteCookie,
@@ -274,3 +274,5 @@ export default {
   saveUserPreferences,
   getAllCookieData,
 };
+
+export default cookieUtils;
