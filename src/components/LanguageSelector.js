@@ -1,10 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { getLanguageFromCountry } from '../utils/currencyUtils';
 import ReactCountryFlag from 'react-country-flag';
 import './LanguageSelector.css';
 
-const LanguageSelector = () => {
+const LanguageSelector = ({ selectedCountry, onCountryChange }) => {
   const { i18n } = useTranslation();
 
   const countries = [
@@ -13,21 +13,23 @@ const LanguageSelector = () => {
     { code: 'gb', name: 'Europe', flagCode: 'GB' }
   ];
 
-  const handleCountryChange = (countryCode) => {
-    const language = getLanguageFromCountry(countryCode);
+  // Apply language whenever selectedCountry changes
+  useEffect(() => {
+    const language = getLanguageFromCountry(selectedCountry);
     i18n.changeLanguage(language);
-    // Store both country and language preferences in localStorage
-    localStorage.setItem('selectedCountry', countryCode);
+    localStorage.setItem('selectedCountry', selectedCountry);
     localStorage.setItem('language', language);
-    // Trigger a custom event to notify other components about the country change
-    window.dispatchEvent(new CustomEvent('countryChange', { detail: countryCode }));
+  }, [selectedCountry, i18n]);
+
+  const handleCountryChange = (countryCode) => {
+    onCountryChange(countryCode);
   };
 
   return (
     <div className="language-selector" style={{ position: 'relative' }}>
-      <select 
+      <select
         onChange={(e) => handleCountryChange(e.target.value)}
-        value={localStorage.getItem('selectedCountry') || 'za'}
+        value={selectedCountry}
         className="form-select"
         style={{ paddingLeft: '35px' }}
       >
@@ -39,13 +41,13 @@ const LanguageSelector = () => {
       </select>
       <div style={{ position: 'absolute', left: '10px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}>
         <ReactCountryFlag
-          countryCode={countries.find(c => c.code === (localStorage.getItem('selectedCountry') || 'za'))?.flagCode || 'ZA'}
+          countryCode={countries.find(c => c.code === selectedCountry)?.flagCode || 'ZA'}
           svg
           style={{
             width: '20px',
             height: '15px'
           }}
-          title={countries.find(c => c.code === (localStorage.getItem('selectedCountry') || 'za'))?.name || 'South Africa'}
+          title={countries.find(c => c.code === selectedCountry)?.name || 'South Africa'}
         />
       </div>
     </div>
