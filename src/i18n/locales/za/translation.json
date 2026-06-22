@@ -109,6 +109,7 @@
     }
   },
   "prices": {
+    "startingPrice": "Starting at",
     "carousel": {
       "webCreation": {
         "title": "AFFORDABLE PRICES WEBSITE CREATION",

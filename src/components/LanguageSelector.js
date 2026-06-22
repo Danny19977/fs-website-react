@@ -19,6 +19,7 @@ const LanguageSelector = ({ selectedCountry, onCountryChange }) => {
     i18n.changeLanguage(language);
     localStorage.setItem('selectedCountry', selectedCountry);
     localStorage.setItem('language', language);
+    window.dispatchEvent(new CustomEvent('countryChange', { detail: selectedCountry }));
   }, [selectedCountry, i18n]);
 
   const handleCountryChange = (countryCode) => {

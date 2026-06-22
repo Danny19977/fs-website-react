@@ -905,6 +905,15 @@ a:focus {
   font-weight: bold;
 }
 
+.price_section .price_container .box .detail-box .starting-price-label {
+  margin-bottom: 6px;
+  color: #03a7d3;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .price_section .price_container .box .detail-box h2 span {
   font-size: 3rem;
 }

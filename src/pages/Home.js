@@ -244,6 +244,7 @@ const Home = ({ darkMode, setDarkMode }) => {
             <ScrollAnimatedElement animation="scale-up" delay={100}>
               <div className="box">
                 <div className="detail-box">
+                  <p className="starting-price-label">{t('prices.startingPrice')}</p>
                   <h2><PriceDisplay amount={5000} /></h2>
                   <h6>{t('prices.webDesignBasic.title')}</h6>
                   <ul className="price_features">
@@ -265,6 +266,7 @@ const Home = ({ darkMode, setDarkMode }) => {
             <ScrollAnimatedElement animation="scale-up" delay={200}>
               <div className="box">
                 <div className="detail-box">
+                  <p className="starting-price-label">{t('prices.startingPrice')}</p>
                   <h2><PriceDisplay amount={2500} /></h2>
                   <h6>{t('prices.webRedesign.title')}</h6>
                   <ul className="price_features">
@@ -285,6 +287,7 @@ const Home = ({ darkMode, setDarkMode }) => {
             <ScrollAnimatedElement animation="scale-up" delay={300}>
               <div className="box">
                 <div className="detail-box">
+                  <p className="starting-price-label">{t('prices.startingPrice')}</p>
                   <h2><PriceDisplay amount={900} /></h2>
                   <h6>{t('prices.graphicDesign.title')}</h6>
                   <ul className="price_features">

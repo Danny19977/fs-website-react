@@ -39,9 +39,9 @@ export const formatCurrency = (amount, country) => {
 export const getCountryFromLanguage = (language) => {
   switch (language) {
     case 'fr':
-      return 'drc';
+      return 'cd';
     case 'en':
-      return 'eu';
+      return 'gb';
     case 'za':
       return 'za';
     default:

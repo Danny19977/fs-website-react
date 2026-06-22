@@ -16,9 +16,27 @@ const PHONE_NUMBERS = {
 };
 
 const detectCountryFromBrowser = () => {
-  const browserLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
-  if (browserLang.startsWith('fr')) return 'cd';
-  return 'za';
+  const browserLocales = navigator.languages && navigator.languages.length
+    ? navigator.languages
+    : [navigator.language || navigator.userLanguage || 'en'];
+
+  for (const locale of browserLocales) {
+    const normalizedLocale = String(locale).toLowerCase();
+    const language = normalizedLocale.split('-')[0];
+
+    if (language === 'fr') return 'cd';
+    if (language === 'en') return 'gb';
+
+    // Treat common South African languages or ZA-region locales as ZA.
+    if (
+      normalizedLocale.includes('-za') ||
+      ['af', 'zu', 'xh', 'st', 'tn', 'nso', 'ss', 've', 'ts', 'nr'].includes(language)
+    ) {
+      return 'za';
+    }
+  }
+
+  return 'gb';
 };
 
 const getInitialCountry = () => localStorage.getItem('selectedCountry') || detectCountryFromBrowser();

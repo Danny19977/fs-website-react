@@ -106,6 +106,7 @@ const Price = ({ darkMode, setDarkMode }) => {
               <div className="box">
                 <div className="detail-box">
                   <h2><span style={{ textDecoration: 'line-through' }}><PriceDisplay amount={5000} /></span></h2>
+                  <p className="starting-price-label">{t('prices.startingPrice')}</p>
                   <h2><PriceDisplay amount={3500} /></h2>
                   <h6>{t('prices.webDesignBasic.title')}</h6>
                   <ul className="price_features">
@@ -126,6 +127,7 @@ const Price = ({ darkMode, setDarkMode }) => {
             <div className="box">
               <div className="detail-box">
                 <h2><span style={{ textDecoration: 'line-through' }}><PriceDisplay amount={2500} /></span></h2>
+                <p className="starting-price-label">{t('prices.startingPrice')}</p>
                 <h2><PriceDisplay amount={1500} /></h2>
                 <h6>{t('prices.webRedesign.title')}</h6>
                 <ul className="price_features">
@@ -145,6 +147,7 @@ const Price = ({ darkMode, setDarkMode }) => {
             <div className="box">
               <div className="detail-box">
                 <h2><span style={{ textDecoration: 'line-through' }}><PriceDisplay amount={900} /></span></h2>
+                <p className="starting-price-label">{t('prices.startingPrice')}</p>
                 <h2><PriceDisplay amount={600} /></h2>
                 <h6>{t('prices.graphicDesign.title')}</h6>
                 <ul className="price_features">
@@ -171,6 +174,7 @@ const Price = ({ darkMode, setDarkMode }) => {
           <div className="price_container">
             <div className="box">
               <div className="detail-box">
+                <p className="starting-price-label">{t('prices.startingPrice')}</p>
                 <h2><PriceDisplay amount={7000} /></h2>
                 <h6>{t('prices.webCreationPackage.title')}</h6>
                 <ul className="price_features">
@@ -189,6 +193,7 @@ const Price = ({ darkMode, setDarkMode }) => {
             </div>
             <div className="box">
               <div className="detail-box">
+                <p className="starting-price-label">{t('prices.startingPrice')}</p>
                 <h2><PriceDisplay amount={3000} /></h2>
                 <h6>{t('prices.webRedesignPackage.title')}</h6>
                 <ul className="price_features">
@@ -207,6 +212,7 @@ const Price = ({ darkMode, setDarkMode }) => {
             </div>
             <div className="box">
               <div className="detail-box">
+                <p className="starting-price-label">{t('prices.startingPrice')}</p>
                 <h2><PriceDisplay amount={2500} /></h2>
                 <h6>{t('prices.graphicDesignPackage.title')}</h6>
                 <ul className="price_features">

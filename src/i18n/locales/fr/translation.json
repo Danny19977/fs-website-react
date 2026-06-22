@@ -121,6 +121,7 @@
     }
   },
   "prices": {
+    "startingPrice": "À partir de",
     "webDesignBasic": {
       "title": "CONCEPTION WEB DE BASE",
       "features": {
